@@ -1,2 +1,5 @@
 # Autarky
-My fresh new repository
+
+Fresh start.
+
+This repository is currently private.
