@@ -13,11 +13,22 @@
         .nav-link { transition: all 0.3s ease; }
         .nav-link:hover { color: #34d399; transform: translateY(-1px); }
         
-        .video-container { position: relative; overflow: hidden; }
-        .video-bg { position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: -1; filter: brightness(0.7) contrast(1.1); }
-        
-        /* Remove gap between hero and philosophy */
-        #philosophy { margin-top: -1px; }
+        .video-container { 
+            position: relative; 
+            height: 100vh; 
+            overflow: hidden; 
+        }
+        .video-bg { 
+            position: absolute; 
+            top: 0; 
+            left: 0; 
+            width: 100%; 
+            height: 100%; 
+            object-fit: cover; 
+            z-index: -1; 
+            filter: brightness(0.75) contrast(1.1); 
+        }
+        #philosophy { margin-top: -1px; } /* Remove any gap */
     </style>
 </head>
 <body class="bg-zinc-950 text-zinc-100">
@@ -45,11 +56,11 @@
     </nav>
 
     <!-- Hero Video -->
-    <section class="video-container min-h-[100dvh]">
+    <section class="video-container">
         <video class="video-bg" autoplay loop muted playsinline>
             <source src="hero-video.mp4" type="video/mp4">
         </video>
-        <div class="min-h-[100dvh] flex items-center">
+        <div class="absolute inset-0 flex items-center">
             <div class="max-w-screen-2xl mx-auto px-8 text-center">
                 <h1 class="hero-font text-5xl md:text-7xl lg:text-8xl tracking-tighter leading-none mb-8 text-white">Regenerative Self-Sufficiency &amp; Freedom</h1>
                 <p class="text-xl md:text-2xl lg:text-3xl text-emerald-100 max-w-4xl mx-auto">From zero-sum scarcity to win-win abundance.<br>A complete closed-loop ecosystem that restores the Earth.</p>
@@ -57,19 +68,21 @@
         </div>
     </section>
 
-    <!-- Philosophy Video - Directly connected -->
-    <section id="philosophy" class="video-container py-32">
+    <!-- Philosophy Video - Seamless connection -->
+    <section id="philosophy" class="video-container">
         <video class="video-bg" autoplay loop muted playsinline>
             <source src="philosophy-video.mp4" type="video/mp4">
         </video>
-        <div class="max-w-screen-2xl mx-auto px-8 text-center relative z-10">
-            <h2 class="text-5xl md:text-6xl font-semibold mb-8 text-white">Core Philosophy</h2>
-            <p class="text-xl md:text-2xl text-emerald-100 max-w-3xl mx-auto">Move from zero-sum scarcity to win-win abundance.<br>True independence and freedom — while actively restoring the Earth.</p>
-            <a href="philosophy.html" class="inline-flex items-center gap-2 mt-12 text-white hover:text-emerald-300 font-medium text-lg">Read full philosophy →</a>
+        <div class="absolute inset-0 flex items-center">
+            <div class="max-w-screen-2xl mx-auto px-8 text-center">
+                <h2 class="text-5xl md:text-6xl font-semibold mb-8 text-white">Core Philosophy</h2>
+                <p class="text-xl md:text-2xl text-emerald-100 max-w-3xl mx-auto">Move from zero-sum scarcity to win-win abundance.<br>True independence and freedom — while actively restoring the Earth.</p>
+                <a href="philosophy.html" class="inline-flex items-center gap-2 mt-12 text-white hover:text-emerald-300 font-medium text-lg">Read full philosophy →</a>
+            </div>
         </div>
     </section>
 
-    <!-- Remaining sections -->
+    <!-- Rest of sections -->
     <section id="biological" class="section py-24 bg-zinc-900">
         <div class="max-w-screen-2xl mx-auto px-8">
             <h2 class="text-5xl font-semibold mb-6">Biological Core</h2>
@@ -78,7 +91,7 @@
         </div>
     </section>
 
-    <!-- (All other sections - FJH, Remediation, Energy, Monolith, Laser, Forge, Road Ahead - are included below in the full file) -->
+    <!-- (FJH, Remediation, Energy, Monolith, Laser, Forge, Road Ahead sections follow the same pattern) -->
 
     <footer class="py-20 text-center border-t border-zinc-800 text-zinc-500">
         Autarky — A living, evolving vision • Always branching
@@ -93,7 +106,7 @@
             hamburger.textContent = hamburger.textContent === '☰' ? '✕' : '☰';
         });
 
-        // Parallax for videos
+        // Parallax
         document.querySelectorAll('.video-bg').forEach(video => {
             window.addEventListener('scroll', () => {
                 const scrollY = window.scrollY;
