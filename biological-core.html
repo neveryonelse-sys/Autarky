@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biological Core — Autarky</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Space+Grotesk:wght@500;600&display=swap');
+        body { font-family: 'Inter', system-ui, sans-serif; }
+        .hero-font { font-family: 'Space Grotesk', sans-serif; }
+    </style>
+</head>
+<body class="bg-zinc-950 text-zinc-100">
+
+    <nav class="sticky top-0 z-50 bg-zinc-950/95 backdrop-blur-md border-b border-zinc-800">
+        <div class="max-w-screen-2xl mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <a href="index.html" class="flex items-center gap-3 text-2xl font-semibold hero-font tracking-tight">Autarky</a>
+                <div class="hidden md:flex items-center gap-8 text-sm font-medium">
+                    <a href="philosophy.html" class="hover:text-emerald-400 transition-colors">Philosophy</a>
+                    <a href="biological-core.html" class="text-emerald-400 font-semibold">Biological Core</a>
+                    <a href="fjh.html" class="hover:text-emerald-400 transition-colors">FJH</a>
+                    <a href="remediation.html" class="hover:text-emerald-400 transition-colors">Remediation</a>
+                    <a href="energy.html" class="hover:text-emerald-400 transition-colors">Energy</a>
+                    <a href="monolith.html" class="hover:text-emerald-400 transition-colors">Monolith</a>
+                    <a href="forge.html" class="hover:text-emerald-400 transition-colors">Forge</a>
+                    <a href="road-ahead.html" class="hover:text-emerald-400 transition-colors">Road Ahead</a>
+                </div>
+                <button id="hamburger" class="md:hidden text-3xl text-zinc-100">☰</button>
+            </div>
+        </div>
+    </nav>
+
+    <header class="min-h-screen flex items-center bg-gradient-to-br from-zinc-950 via-emerald-950 to-teal-950">
+        <div class="max-w-screen-2xl mx-auto px-8 py-24 text-center">
+            <h1 class="hero-font text-6xl md:text-7xl tracking-tighter leading-none">Biological Core</h1>
+            <p class="mt-10 text-2xl text-emerald-100 max-w-3xl mx-auto">The living foundation of Autarky — Chlorella and Mycelium working in perfect symbiosis.</p>
+        </div>
+    </header>
+
+    <div class="max-w-screen-2xl mx-auto px-8 py-16 prose prose-invert max-w-none text-zinc-300">
+        <h2 class="text-3xl font-semibold mb-6">Chlorella</h2>
+        <p>Explosive, fast-growing biomass engine. High in protein, lipids, and nitrogen. The primary growth driver of the entire system.</p>
+
+        <h2 class="text-3xl font-semibold mt-12 mb-6">Mycelium</h2>
+        <p>Natural flocculator and structural binder. Aggregates Chlorella into harvestable composites and grows on waste streams.</p>
+
+        <h2 class="text-3xl font-semibold mt-12 mb-6">Zero-Waste Loop</h2>
+        <p>Biomass → processing → char/off-gases → back to growth. No chemical additives required. Everything cycles back into the system.</p>
+    </div>
+
+    <footer class="py-12 text-center text-zinc-500 border-t border-zinc-800">
+        <a href="index.html" class="text-emerald-400 hover:text-emerald-300">← Back to Home</a>
+    </footer>
+</body>
+</html>
