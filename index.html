@@ -7,50 +7,70 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Space+Grotesk:wght@500&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Space+Grotesk:wght@500;600&display=swap');
         body { font-family: 'Inter', system-ui, sans-serif; }
         .hero-font { font-family: 'Space Grotesk', sans-serif; }
+        .section-header { position: relative; }
         .section-header::after {
             content: '';
             position: absolute;
-            bottom: -4px;
+            bottom: -6px;
             left: 0;
-            width: 60px;
-            height: 3px;
+            width: 64px;
+            height: 4px;
             background: linear-gradient(to right, #10b981, #34d399);
         }
     </style>
 </head>
 <body class="bg-zinc-950 text-zinc-100">
-    <header class="min-h-screen flex items-center bg-gradient-to-br from-zinc-950 via-emerald-950 to-zinc-950 relative overflow-hidden">
-        <div class="max-w-screen-2xl mx-auto px-6 py-24 text-center relative z-10">
-            <h1 class="hero-font text-6xl md:text-7xl lg:text-8xl tracking-tighter mb-6 leading-none">Autarky</h1>
-            <p class="text-3xl md:text-4xl text-emerald-300 mb-4">Regenerative Self-Sufficiency & Freedom</p>
-            <p class="text-xl text-zinc-400 max-w-2xl mx-auto mb-12">From zero-sum scarcity to win-win abundance. A closed-loop ecosystem that restores the Earth while granting true independence.</p>
-            <a href="#monolith" class="inline-flex items-center px-8 py-4 bg-emerald-600 hover:bg-emerald-500 rounded-2xl text-lg font-medium transition-colors">
-                Explore the Monolith <i class="fa-solid fa-arrow-down ml-2"></i>
-            </a>
+    <!-- Hero -->
+    <header class="min-h-screen flex items-center bg-gradient-to-br from-zinc-950 via-emerald-950 to-teal-950 relative overflow-hidden">
+        <div class="max-w-screen-2xl mx-auto px-8 py-20 text-center relative z-10">
+            <h1 class="hero-font text-7xl md:text-8xl lg:text-9xl font-semibold tracking-tighter mb-4">AUTARKY</h1>
+            <p class="text-4xl md:text-5xl text-emerald-300 mb-6">Regenerative Self-Sufficiency & Freedom</p>
+            <p class="max-w-2xl mx-auto text-xl text-zinc-400">From zero-sum scarcity to win-win abundance.<br>A closed-loop ecosystem that restores the Earth while granting true independence.</p>
         </div>
     </header>
 
-    <main class="max-w-screen-2xl mx-auto px-6 py-16">
+    <main class="max-w-screen-2xl mx-auto px-8 py-16">
+
         <!-- Philosophy -->
         <section class="mb-24">
-            <h2 class="text-4xl font-semibold mb-8">Core Philosophy</h2>
-            <p class="text-zinc-300 text-lg max-w-3xl">Move from zero-sum scarcity and extraction to win-win abundance. The system is designed so that participants achieve true independence and freedom — no bills, no forced labor — while actively restoring the Earth.</p>
+            <h2 class="section-header text-5xl font-semibold mb-10">Core Philosophy</h2>
+            <div class="prose prose-invert max-w-none text-lg text-zinc-300">
+                <p>Move from zero-sum scarcity and extraction to win-win abundance. The system is designed so that participants achieve true independence and freedom — no bills, no forced labor — while actively restoring the Earth and then expanding outward.</p>
+            </div>
         </section>
 
-        <!-- Thermal Monolith Section -->
-        <section id="monolith" class="bg-zinc-900 rounded-3xl p-12 mb-24">
-            <h2 class="text-4xl font-semibold mb-6">Thermal Battery / Multifunctional Monolith</h2>
-            <p class="text-emerald-400 mb-6 font-medium">Open-Thermal-Monolith • ZeroWaste-Smart-Panels</p>
-            <p class="text-zinc-300 text-lg leading-relaxed">A single, self-replicating structural material that functions as an energy-positive high-temperature latent-heat thermal battery, high-quality laser source, air/water purifier, and load-bearing building element.</p>
-            <!-- More content from user's document will be added here in full version -->
+        <!-- Biological Core -->
+        <section class="mb-24">
+            <h2 class="section-header text-4xl font-semibold mb-8">Biological Core</h2>
+            <p class="text-zinc-300 text-lg">Chlorella as explosive biomass engine + Mycelium as natural flocculator and structural binder. Zero-waste loop using only sunlight, water, and waste streams.</p>
         </section>
+
+        <!-- FJH -->
+        <section class="mb-24">
+            <h2 class="section-header text-4xl font-semibold mb-8">Flash Joule Heating (FJH) Materials Engine</h2>
+            <p class="text-zinc-300 text-lg">Converts biomass into high-quality graphene and advanced carbons in milliseconds. Self-reinforcing system that produces the materials needed for energy devices and remediation.</p>
+        </section>
+
+        <!-- Thermal Monolith - Full Section -->
+        <section id="monolith" class="bg-gradient-to-br from-emerald-900/30 to-teal-900/30 border border-emerald-800 rounded-3xl p-12 mb-24">
+            <h2 class="text-5xl font-semibold mb-3">Thermal Battery / Multifunctional Monolith</h2>
+            <p class="text-emerald-400 text-xl mb-8">Open-Thermal-Monolith • ZeroWaste-Smart-Panels</p>
+            <div class="prose prose-invert max-w-none text-zinc-200 text-lg leading-relaxed">
+                <p>A single, self-replicating structural material that functions as an <strong>energy-positive high-temperature latent-heat thermal battery</strong>, high-quality laser source, air/water purifier, and load-bearing building element.</p>
+                <p class="mt-6"><strong>Core Composition:</strong> Mycelium CGC aerogel matrix + Mg-doped carbon aerogel + N/Si-co-doped carbon dots + embedded Si pellets (molten silicon phase-change storage with in-situ SiC containment).</p>
+                <p><strong>How it works:</strong> Joule heating melts Si → blackbody radiation + lasing → TPV electricity generation + laser output for fabrication. Zero-waste replication using local biomass, regolith, and sunlight.</p>
+                <p class="mt-6 text-emerald-300">Applications: Self-powered housing, disaster shelters, vehicles, spacecraft panels, and full Von Neumann replicators.</p>
+            </div>
+        </section>
+
+        <!-- More sections would go here in full build -->
+
+        <footer class="text-center py-12 border-t border-zinc-800 text-zinc-500">
+            Autarky — Living, evolving vision document • Always branching
+        </footer>
     </main>
-
-    <footer class="text-center py-12 text-zinc-500 text-sm border-t border-zinc-800">
-        Autarky — Living Vision • Always Evolving
-    </footer>
 </body>
 </html>
