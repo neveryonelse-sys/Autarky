@@ -13,8 +13,9 @@
         .nav-link { transition: all 0.3s ease; }
         .nav-link:hover { color: #34d399; transform: translateY(-1px); }
         .section { scroll-margin-top: 90px; }
-        .hero-video-container { position: relative; min-height: 100dvh; overflow: hidden; }
-        .hero-video { position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: -1; filter: brightness(0.75) contrast(1.1); }
+        
+        .video-container { position: relative; overflow: hidden; min-height: 100dvh; }
+        .video-bg { position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: -1; filter: brightness(0.7) contrast(1.1); }
     </style>
 </head>
 <body class="bg-zinc-950 text-zinc-100">
@@ -55,12 +56,12 @@
         </div>
     </nav>
 
-    <!-- Hero with Video Background -->
-    <section class="hero-video-container">
-        <video class="hero-video" autoplay loop muted playsinline>
+    <!-- Hero - Hexagonal Video -->
+    <section class="video-container">
+        <video class="video-bg" autoplay loop muted playsinline>
             <source src="hero-video.mp4" type="video/mp4">
         </video>
-        <div class="min-h-[100dvh] flex items-center pt-20 md:pt-0">
+        <div class="min-h-[100dvh] flex items-center">
             <div class="max-w-screen-2xl mx-auto px-8 text-center">
                 <h1 class="hero-font text-5xl md:text-7xl lg:text-8xl tracking-tighter leading-none mb-8 text-white">Regenerative Self-Sufficiency &amp; Freedom</h1>
                 <p class="text-xl md:text-2xl lg:text-3xl text-emerald-100 max-w-4xl mx-auto">From zero-sum scarcity to win-win abundance.<br>A complete closed-loop ecosystem that restores the Earth.</p>
@@ -68,17 +69,20 @@
         </div>
     </section>
 
-    <!-- Philosophy -->
-    <section id="philosophy" class="section py-24 bg-zinc-900">
-        <div class="max-w-screen-2xl mx-auto px-8">
-            <h2 class="text-5xl font-semibold mb-6">Core Philosophy</h2>
-            <p class="text-xl text-zinc-300 max-w-3xl">Move from zero-sum scarcity to win-win abundance. True independence — no bills, no forced labor — while actively restoring the Earth.</p>
-            <a href="philosophy.html" class="inline-flex items-center gap-2 mt-8 text-emerald-400 hover:text-emerald-300 font-medium">Read full philosophy →</a>
+    <!-- Philosophy - Nature Video -->
+    <section id="philosophy" class="video-container section py-32">
+        <video class="video-bg" autoplay loop muted playsinline>
+            <source src="philosophy-video.mp4" type="video/mp4">
+        </video>
+        <div class="max-w-screen-2xl mx-auto px-8 text-center relative z-10">
+            <h2 class="text-5xl md:text-6xl font-semibold mb-8 text-white">Core Philosophy</h2>
+            <p class="text-xl md:text-2xl text-emerald-100 max-w-3xl mx-auto">Move from zero-sum scarcity to win-win abundance.<br>True independence and freedom — while actively restoring the Earth.</p>
+            <a href="philosophy.html" class="inline-flex items-center gap-2 mt-12 text-white hover:text-emerald-300 font-medium text-lg">Read full philosophy →</a>
         </div>
     </section>
 
     <!-- Biological Core -->
-    <section id="biological" class="section py-24">
+    <section id="biological" class="section py-24 bg-zinc-900">
         <div class="max-w-screen-2xl mx-auto px-8">
             <h2 class="text-5xl font-semibold mb-6">Biological Core</h2>
             <p class="text-xl text-zinc-300 max-w-3xl">Chlorella as explosive biomass engine + Mycelium as natural flocculator and structural binder.</p>
@@ -87,16 +91,16 @@
     </section>
 
     <!-- FJH -->
-    <section id="fjh" class="section py-24 bg-zinc-900">
+    <section id="fjh" class="section py-24">
         <div class="max-w-screen-2xl mx-auto px-8">
             <h2 class="text-5xl font-semibold mb-6">Flash Joule Heating (FJH)</h2>
-            <p class="text-xl text-zinc-300 max-w-3xl">Converts biomass into high-performance graphene in milliseconds — the self-reinforcing materials engine.</p>
+            <p class="text-xl text-zinc-300 max-w-3xl">Converts biomass into high-performance graphene in milliseconds.</p>
             <a href="fjh.html" class="inline-flex items-center gap-2 mt-8 text-emerald-400 hover:text-emerald-300 font-medium">Learn about FJH →</a>
         </div>
     </section>
 
     <!-- Remediation -->
-    <section id="remediation" class="section py-24">
+    <section id="remediation" class="section py-24 bg-zinc-900">
         <div class="max-w-screen-2xl mx-auto px-8">
             <h2 class="text-5xl font-semibold mb-6">Planetary Remediation</h2>
             <p class="text-xl text-zinc-300 max-w-3xl">Active healing of the Earth using photocatalysis and closed-loop processes.</p>
@@ -105,7 +109,7 @@
     </section>
 
     <!-- Energy -->
-    <section id="energy" class="section py-24 bg-zinc-900">
+    <section id="energy" class="section py-24">
         <div class="max-w-screen-2xl mx-auto px-8">
             <h2 class="text-5xl font-semibold mb-6">Energy Architecture</h2>
             <p class="text-xl text-zinc-300 max-w-3xl">scCO₂ reluctance turbine + Multifunctional Thermal Monolith.</p>
@@ -114,16 +118,16 @@
     </section>
 
     <!-- Monolith -->
-    <section id="monolith" class="section py-24">
+    <section id="monolith" class="section py-24 bg-zinc-900">
         <div class="max-w-screen-2xl mx-auto px-8">
             <h2 class="text-5xl font-semibold mb-6">Thermal Battery / Multifunctional Monolith</h2>
-            <p class="text-xl text-zinc-300 max-w-3xl">Self-replicating structural material that stores heat, generates power, purifies air/water, and produces lasers.</p>
+            <p class="text-xl text-zinc-300 max-w-3xl">Self-replicating structural material that stores heat, generates power, and produces lasers.</p>
             <a href="monolith.html" class="inline-flex items-center gap-2 mt-8 text-emerald-400 hover:text-emerald-300 font-medium">Dive into the Monolith →</a>
         </div>
     </section>
 
     <!-- Laser -->
-    <section id="laser" class="section py-24 bg-zinc-900">
+    <section id="laser" class="section py-24">
         <div class="max-w-screen-2xl mx-auto px-8">
             <h2 class="text-5xl font-semibold mb-6">Laser Architecture</h2>
             <p class="text-xl text-zinc-300 max-w-3xl">Integrated random laser + diamond Raman converter built into the Monolith.</p>
@@ -132,7 +136,7 @@
     </section>
 
     <!-- Forge -->
-    <section id="forge" class="section py-24">
+    <section id="forge" class="section py-24 bg-zinc-900">
         <div class="max-w-screen-2xl mx-auto px-8">
             <h2 class="text-5xl font-semibold mb-6">Metastellar Forge</h2>
             <p class="text-xl text-zinc-300 max-w-3xl">Self-bootstrapping synthesis engine for advanced metamaterials.</p>
@@ -141,10 +145,10 @@
     </section>
 
     <!-- Road Ahead -->
-    <section id="road-ahead" class="section py-24 bg-zinc-900">
+    <section id="road-ahead" class="section py-24">
         <div class="max-w-screen-2xl mx-auto px-8">
             <h2 class="text-5xl font-semibold mb-6">Road Ahead</h2>
-            <p class="text-xl text-zinc-300 max-w-3xl">Earth-First Prototype → Long-Term Space Goal. Self-replicating bio-nanomaterial systems.</p>
+            <p class="text-xl text-zinc-300 max-w-3xl">Earth-First Prototype → Long-Term Space Goal.</p>
             <a href="road-ahead.html" class="inline-flex items-center gap-2 mt-8 text-emerald-400 hover:text-emerald-300 font-medium">See the Full Roadmap →</a>
         </div>
     </section>
@@ -155,6 +159,7 @@
 
     <!-- Scripts -->
     <script>
+        // Hamburger Menu
         const hamburger = document.getElementById('hamburger');
         const mobileMenu = document.getElementById('mobile-menu');
         hamburger.addEventListener('click', () => {
@@ -162,13 +167,13 @@
             hamburger.textContent = hamburger.textContent === '☰' ? '✕' : '☰';
         });
 
-        // Parallax
-        const video = document.querySelector('.hero-video');
-        if (video) {
+        // Parallax for all video backgrounds
+        document.querySelectorAll('.video-bg').forEach(video => {
             window.addEventListener('scroll', () => {
-                video.style.transform = `translateY(${window.scrollY * 0.12}px)`;
+                const scrollY = window.scrollY;
+                video.style.transform = `translateY(${scrollY * 0.12}px)`;
             });
-        }
+        });
     </script>
 </body>
 </html>
