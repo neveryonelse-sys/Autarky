@@ -10,30 +10,87 @@
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Space+Grotesk:wght@500;600&display=swap');
         body { font-family: 'Inter', system-ui, sans-serif; }
         .hero-font { font-family: 'Space Grotesk', sans-serif; }
+        .section-header::after {
+            content: '';
+            position: absolute;
+            bottom: -8px;
+            left: 0;
+            width: 80px;
+            height: 4px;
+            background: linear-gradient(to right, #10b981, #34d399);
+        }
     </style>
 </head>
 <body class="bg-zinc-950 text-zinc-100">
 
+    <!-- Navigation -->
     <nav class="sticky top-0 z-50 bg-zinc-950/95 backdrop-blur-md border-b border-zinc-800">
         <div class="max-w-screen-2xl mx-auto px-8 py-5 flex items-center justify-between">
             <a href="index.html" class="flex items-center gap-3 text-2xl font-semibold hero-font tracking-tight">Autarky</a>
-            <div class="flex gap-6 text-sm font-medium">
+            <div class="flex gap-8 text-sm font-medium">
                 <a href="index.html" class="hover:text-emerald-400 transition-colors">← Home</a>
-                <a href="monolith.html" class="text-emerald-400">Monolith</a>
             </div>
         </div>
     </nav>
 
-    <div class="max-w-screen-2xl mx-auto px-8 py-16">
-        <h1 class="text-5xl font-semibold mb-4">Thermal Battery / Multifunctional Monolith</h1>
-        <p class="text-emerald-300 text-2xl mb-12">Open-Thermal-Monolith • ZeroWaste-Smart-Panels</p>
-        
-        <div class="prose prose-invert max-w-none text-zinc-300 text-lg leading-relaxed">
-            <p>A single, self-replicating structural material that functions as an <strong>energy-positive high-temperature latent-heat thermal battery</strong>, high-quality laser source, air/water purifier, and load-bearing building element.</p>
-            <p>It is designed for zero-waste, zero-gatekeeping replication using only atmospheric CO₂, water, sunlight, common biomass, mycelium, and regolith/sand.</p>
-            <!-- Full details from user documents would go here -->
+    <div class="max-w-screen-2xl mx-auto px-8 py-12">
+        <!-- Hero -->
+        <div class="mb-16">
+            <h1 class="text-6xl md:text-7xl font-semibold tracking-tighter hero-font mb-4">Thermal Battery / Multifunctional Monolith</h1>
+            <p class="text-emerald-300 text-3xl">Open-Thermal-Monolith • ZeroWaste-Smart-Panels</p>
+        </div>
+
+        <div class="prose prose-invert max-w-none text-zinc-200 text-lg leading-relaxed">
+            <p class="text-xl">A single, self-replicating structural material that functions as an <strong>energy-positive high-temperature latent-heat thermal battery</strong>, high-quality laser source, air/water purifier, and load-bearing building element.</p>
+            <p>It is designed for <strong>zero-waste, zero-gatekeeping replication</strong> using only atmospheric CO₂, water, sunlight, common biomass (Chlorella or agricultural waste), mycelium, and regolith/sand (Si source).</p>
+            <p>Once bootstrapped, the system runs indefinitely without external inputs.</p>
+
+            <h2 class="text-4xl font-semibold mt-16 mb-8 section-header">Core Composition</h2>
+            <ul class="grid md:grid-cols-2 gap-6 list-none">
+                <li class="bg-zinc-900 p-6 rounded-3xl"><strong>Matrix:</strong> Mycelium chitin–glucan complex (CGC) aerogel</li>
+                <li class="bg-zinc-900 p-6 rounded-3xl"><strong>Energy emitter / blackbody radiator:</strong> Mg-doped carbon aerogel (FJH-processed from Chlorella hydrochar)</li>
+                <li class="bg-zinc-900 p-6 rounded-3xl"><strong>Gain medium:</strong> N/Si-co-doped carbon dots (CDs) for lasing</li>
+                <li class="bg-zinc-900 p-6 rounded-3xl"><strong>Thermal storage core:</strong> Embedded Si pellets forming molten silicon in SiC shells (~1800 kJ/kg fusion enthalpy)</li>
+                <li class="bg-zinc-900 p-6 rounded-3xl"><strong>Electrodes:</strong> Percolating FJH-graphene network</li>
+            </ul>
+
+            <h2 class="text-4xl font-semibold mt-16 mb-8 section-header">How It Works</h2>
+            <ol class="space-y-8">
+                <li><strong>1.</strong> Joule heating via embedded graphene electrodes melts the Si pellets inside in-situ formed SiC containment shells.</li>
+                <li><strong>2.</strong> Molten silicon releases massive latent + sensible heat, driving the carbon matrix to extreme temperatures and producing intense blackbody radiation.</li>
+                <li><strong>3.</strong> Thermophotovoltaic cells (TPVs) convert the radiation back into electricity → net positive power output.</li>
+                <li><strong>4.</strong> Embedded carbon dots create random lasing; diamond Raman converter produces high-quality beam for fabrication and replication.</li>
+                <li><strong>5.</strong> TiO₂ + carbon dot layers provide photocatalysis for air and water purification.</li>
+            </ol>
+
+            <h2 class="text-4xl font-semibold mt-16 mb-8 section-header">Zero-Waste Replication Loop</h2>
+            <p>Chlorella/waste biomass → HTC → CDs + hydrochar → FJH → flash graphene/NDs + H₂ byproduct.<br>
+            Mycelium grown on waste → CGC aerogel → monolith with all components.<br>
+            Laser beam from the monolith fabricates more units from local materials.</p>
+
+            <h2 class="text-4xl font-semibold mt-16 mb-8 section-header">Applications</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-zinc-900 p-8 rounded-3xl">
+                    <strong>Earth-first</strong><br>Affordable housing, disaster-relief shelters, community centers, industrial enclosures
+                </div>
+                <div class="bg-zinc-900 p-8 rounded-3xl">
+                    <strong>Space</strong><br>Spacecraft panels that harvest re-entry plasma/heat, unfold into habitats
+                </div>
+                <div class="bg-zinc-900 p-8 rounded-3xl">
+                    <strong>Long-term</strong><br>Full Von Neumann-style self-replicating habitats and vehicles
+                </div>
+            </div>
+
+            <div class="mt-20 p-10 bg-gradient-to-br from-emerald-900/30 to-teal-900/30 border border-emerald-700 rounded-3xl">
+                <h3 class="text-3xl font-semibold mb-6">Open-Source Philosophy</h3>
+                <p class="text-emerald-100">Everything is deliberately ungated: no proprietary precursors, no rare elements, no IP. Blueprints, recipes, and replication instructions are meant to be copied freely by anyone with access to sunlight, water, and basic biomass.</p>
+            </div>
         </div>
     </div>
+
+    <footer class="py-12 text-center text-zinc-500 border-t border-zinc-800 mt-20">
+        <a href="index.html" class="text-emerald-400 hover:text-emerald-300">← Back to Autarky Home</a>
+    </footer>
 
 </body>
 </html>
