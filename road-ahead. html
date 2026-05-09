@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Road Ahead — Autarky</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Space+Grotesk:wght@500;600&display=swap');
+        body { font-family: 'Inter', system-ui, sans-serif; }
+        .hero-font { font-family: 'Space Grotesk', sans-serif; }
+        .section-header::after {
+            content: '';
+            position: absolute;
+            bottom: -8px;
+            left: 0;
+            width: 80px;
+            height: 4px;
+            background: linear-gradient(to right, #10b981, #34d399);
+        }
+        html { scroll-behavior: smooth; }
+    </style>
+</head>
+<body class="bg-zinc-950 text-zinc-100">
+
+    <!-- Navbar (same as other pages) -->
+    <nav class="sticky top-0 z-50 bg-zinc-950/95 backdrop-blur-md border-b border-zinc-800">
+        <div class="max-w-screen-2xl mx-auto px-8 py-4 flex items-center justify-between">
+            <a href="index.html" class="flex items-center gap-3 text-2xl font-semibold hero-font tracking-tight">Autarky</a>
+            <div class="flex gap-8 text-sm font-medium">
+                <a href="philosophy.html" class="hover:text-emerald-400 transition-colors">Philosophy</a>
+                <a href="biological-core.html" class="hover:text-emerald-400 transition-colors">Biological Core</a>
+                <a href="fjh.html" class="hover:text-emerald-400 transition-colors">FJH</a>
+                <a href="remediation.html" class="hover:text-emerald-400 transition-colors">Remediation</a>
+                <a href="energy.html" class="hover:text-emerald-400 transition-colors">Energy</a>
+                <a href="monolith.html" class="hover:text-emerald-400 transition-colors">Monolith</a>
+                <a href="forge.html" class="hover:text-emerald-400 transition-colors">Forge</a>
+                <a href="road-ahead.html" class="text-emerald-400 font-semibold">Road Ahead</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <header class="min-h-screen flex items-center bg-gradient-to-br from-zinc-950 via-emerald-950 to-teal-950">
+        <div class="max-w-screen-2xl mx-auto px-8 py-24 text-center">
+            <h1 class="hero-font text-6xl md:text-7xl tracking-tighter leading-none mb-6">Earth-First Prototype → Long-Term Space Goal</h1>
+            <p class="max-w-3xl mx-auto text-2xl text-emerald-100/90">Self-Replicating Bio-Nanomaterial System Using Chlorella, Mycelium, and Supramolecular Carbon Dots</p>
+        </div>
+    </header>
+
+    <div class="max-w-screen-2xl mx-auto px-8 py-16 prose prose-invert max-w-none text-zinc-300">
+        <h2 class="text-4xl font-semibold mb-8 section-header">Core Philosophy</h2>
+        <p>Start on Earth with a fully closed-loop, low-energy, waste-biomass-driven factory that produces high-performance nanomaterials, energy storage, and lasers using only biology + simple processing. Once proven and scaled terrestrially, the identical technology seeds self-replicating Von Neumann probes on C-type asteroids to build a solar-system laser propulsion highway.</p>
+
+        <h2 class="text-4xl font-semibold mt-16 mb-8 section-header">Earth-Based Closed-Loop Factory (Immediate Implementation)</h2>
+        <ol class="list-decimal pl-6 space-y-8 text-lg">
+            <li><strong>Chlorella Photobioreactors (PBRs)</strong><br>Grown in water containing high-QY carbon dots (CDs) for 17–112 % biomass boost. Folate naturally produced by Chlorella is extracted and used as the precursor for the CDs themselves.</li>
+            <li><strong>Mycelial Composite Growth</strong><br>Mycelium grown in Chlorella biomass + hydrochar medium. Optional enhancements: collagen-mimetic proteins or boron-enriched tissue cells. Si pellets embedded during growth.</li>
+            <li><strong>Processing Pipeline</strong><br>Freeze-dry the mycelial cylinders → Flash Joule Heating (FJH) → carbon aerogel matrix with in-situ SiC encapsulation. Hydrochar byproduct supplies syngas. Add trace Mg and CB[8]-templated CDs.</li>
+            <li><strong>Key Products Fabricated On-Site</strong><br>• Thermal Batteries (cylindrical aerogel/SiC core)<br>• PBR Vessels<br>• CB[8]-CD Hydrogel Laser (high-QY, self-healing, dual excitation)</li>
+        </ol>
+
+        <h2 class="text-4xl font-semibold mt-16 mb-8 section-header">Terrestrial Applications (Earth-First Uses)</h2>
+        <ul class="grid md:grid-cols-2 gap-6">
+            <li class="bg-zinc-900 p-6 rounded-3xl">Renewable energy storage &amp; dispatchable power</li>
+            <li class="bg-zinc-900 p-6 rounded-3xl">Carbon capture &amp; ultra-efficient biomass production</li>
+            <li class="bg-zinc-900 p-6 rounded-3xl">Rugged, self-repairing laser technology</li>
+            <li class="bg-zinc-900 p-6 rounded-3xl">Circular manufacturing in modular shipping-container factories</li>
+        </ul>
+
+        <h2 class="text-4xl font-semibold mt-16 mb-8 section-header">Transition to Space (Long-Term Goal)</h2>
+        <p>Once the Earth factory is proven, identical seed kits are launched on minimal probes. Probes land on water-rich C-type asteroids and replicate using asteroid regolith and volatiles. Mass-produce thermal batteries, PBRs, and CB[8]-CD lasers → deploy laser relay stations → build a propellantless “laser propulsion highway” for lightsails across the solar system and beyond.</p>
+
+        <h2 class="text-4xl font-semibold mt-16 mb-8 section-header">Key Advantages Across Both Phases</h2>
+        <ul class="list-disc pl-6 space-y-3 text-lg">
+            <li>Extremely low carried/imported mass after first cycle</li>
+            <li>Fully closed carbon, water, and energy loops</li>
+            <li>Chlorella’s unmatched growth rate + CD boost</li>
+            <li>Solar-independent after bootstrap</li>
+            <li>Self-healing, rugged, biocompatible materials</li>
+            <li>Exponential replication on Earth or in space</li>
+        </ul>
+    </div>
+
+    <footer class="py-12 text-center text-zinc-500 border-t border-zinc-800">
+        <a href="index.html" class="inline-flex items-center gap-2 text-emerald-400 hover:text-emerald-300">← Back to Home</a>
+        <p class="text-xs mt-8">Autarky — Living Vision • Always Evolving</p>
+    </footer>
+
+</body>
+</html>
