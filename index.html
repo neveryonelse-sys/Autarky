@@ -7,62 +7,101 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Space+Grotesk:wght@500&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Space+Grotesk:wght@500;600&display=swap');
         body { font-family: 'Inter', system-ui, sans-serif; }
         .hero-font { font-family: 'Space Grotesk', sans-serif; }
+        .section-header {
+            position: relative;
+        }
         .section-header::after {
             content: '';
             position: absolute;
-            bottom: -4px;
+            bottom: -8px;
             left: 0;
-            width: 60px;
-            height: 3px;
+            width: 80px;
+            height: 4px;
             background: linear-gradient(to right, #10b981, #34d399);
+        }
+        .card {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 20px 25px -5px rgb(16 185 129), 0 8px 10px -6px rgb(16 185 129);
         }
     </style>
 </head>
 <body class="bg-zinc-950 text-zinc-100">
+
     <!-- Hero -->
-    <header class="min-h-screen flex items-center bg-gradient-to-br from-zinc-950 via-emerald-950 to-zinc-950">
-        <div class="max-w-screen-2xl mx-auto px-6 py-24 text-center">
-            <h1 class="hero-font text-7xl md:text-8xl tracking-tighter mb-6">Regenerative Self-Sufficiency & Freedom</h1>
-            <p class="text-2xl text-zinc-400 max-w-2xl mx-auto mb-10">From zero-sum scarcity to win-win abundance. A complete closed-loop ecosystem that restores the Earth while granting true independence.</p>
-            <a href="#monolith" class="inline-flex items-center px-10 py-5 bg-emerald-500 hover:bg-emerald-600 rounded-3xl text-xl font-semibold gap-x-3">
-                Explore the Vision <i class="fa-solid fa-arrow-right"></i>
+    <header class="min-h-screen flex items-center bg-gradient-to-br from-zinc-950 via-emerald-950 to-teal-950 relative">
+        <div class="max-w-screen-2xl mx-auto px-8 py-24 text-center">
+            <div class="inline-flex items-center gap-3 bg-emerald-900/50 text-emerald-300 text-sm px-6 py-3 rounded-3xl mb-8">
+                <i class="fa-solid fa-seedling"></i>
+                Living Vision
+            </div>
+            <h1 class="hero-font text-6xl md:text-8xl tracking-tighter leading-none mb-8">Regenerative Self-Sufficiency & Freedom</h1>
+            <p class="max-w-3xl mx-auto text-2xl text-emerald-100/90 mb-12">From zero-sum scarcity and extraction to win-win abundance. A complete closed-loop ecosystem that restores the Earth while granting true independence.</p>
+            <a href="#vision" class="inline-flex items-center px-10 py-6 bg-emerald-500 hover:bg-emerald-600 rounded-3xl text-xl font-semibold transition-colors">
+                Explore the Full Vision <i class="fa-solid fa-arrow-down ml-3"></i>
             </a>
         </div>
     </header>
 
-    <!-- Philosophy -->
-    <section class="py-20 bg-zinc-900">
-        <div class="max-w-screen-2xl mx-auto px-6">
+    <!-- Core Philosophy -->
+    <section class="py-24 bg-zinc-900" id="vision">
+        <div class="max-w-screen-2xl mx-auto px-8">
             <h2 class="text-5xl font-semibold text-center mb-12 section-header">Core Philosophy</h2>
-            <p class="text-center text-xl text-zinc-400 max-w-xl mx-auto">Move from zero-sum scarcity and extraction to win-win abundance. True independence with no bills, no forced labor — while actively restoring the Earth.</p>
-        </div>
-    </section>
-
-    <!-- Biological Core, FJH, Remediation, Forge sections abbreviated for brevity but full in actual paste -->
-    <!-- (The full detailed version with all sections is ready — I'm keeping this response readable) -->
-
-    <!-- Thermal Monolith — the new star section -->
-    <section id="monolith" class="py-20 bg-zinc-950">
-        <div class="max-w-screen-2xl mx-auto px-6">
-            <div class="bg-gradient-to-br from-emerald-900 to-teal-900 rounded-3xl p-12">
-                <h2 class="text-4xl font-semibold mb-4">Thermal Battery / Multifunctional Monolith</h2>
-                <p class="text-emerald-200 mb-6">Open-Thermal-Monolith • ZeroWaste-Smart-Panels</p>
-                <p class="text-zinc-300">A single, self-replicating structural material that functions as an energy-positive high-temperature latent-heat thermal battery, laser source, air/water purifier, and load-bearing building element.</p>
-                <div class="mt-8 grid md:grid-cols-2 gap-6 text-sm">
-                    <div><strong>Matrix:</strong> Mycelium CGC aerogel</div>
-                    <div><strong>Thermal Core:</strong> Molten Si pellets in SiC shells</div>
-                    <div><strong>Replication:</strong> Zero-waste, fully local inputs</div>
-                    <div><strong>Applications:</strong> Housing, vehicles, spacecraft, Von Neumann replicators</div>
-                </div>
+            <div class="max-w-4xl mx-auto text-center text-xl text-zinc-300">
+                Move from zero-sum scarcity and extraction to win-win abundance.<br>
+                True independence and freedom — no bills, no forced labor — while actively restoring the Earth and expanding outward.
             </div>
         </div>
     </section>
 
-    <footer class="py-12 text-center text-zinc-400 text-sm">
-        Autarky — living vision document • Always evolving
+    <!-- Main Content -->
+    <div class="max-w-screen-2xl mx-auto px-8 py-16">
+
+        <!-- Biological Core -->
+        <div class="mb-24">
+            <h2 class="text-4xl font-semibold mb-8 section-header">Biological Core</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-zinc-900 p-8 rounded-3xl card">
+                    <h3 class="text-2xl mb-4">Chlorella</h3>
+                    <p class="text-zinc-400">Explosive, fast-growing biomass engine. High in protein, lipids, and nitrogen.</p>
+                </div>
+                <div class="bg-zinc-900 p-8 rounded-3xl card">
+                    <h3 class="text-2xl mb-4">Mycelium</h3>
+                    <p class="text-zinc-400">Natural flocculator and structural binder. Grows on waste streams and aggregates Chlorella.</p>
+                </div>
+            </div>
+            <p class="mt-8 text-zinc-400 max-w-2xl">Zero-waste biological loop: Biomass → processing → char/off-gases → back to growth.</p>
+        </div>
+
+        <!-- FJH -->
+        <div class="mb-24">
+            <h2 class="text-4xl font-semibold mb-8 section-header">Flash Joule Heating (FJH)</h2>
+            <p class="text-lg text-zinc-300 max-w-3xl">Converts Chlorella + mycelium biomass into high-quality graphene and advanced carbons in milliseconds. Self-reinforcing loop that powers the entire system.</p>
+        </div>
+
+        <!-- Thermal Monolith -->
+        <div id="monolith" class="mb-24 bg-gradient-to-br from-emerald-900/30 to-teal-900/30 border border-emerald-700 rounded-3xl p-12">
+            <h2 class="text-4xl font-semibold mb-4">Thermal Battery / Multifunctional Monolith</h2>
+            <p class="text-emerald-300 text-xl mb-6">Open-Thermal-Monolith • ZeroWaste-Smart-Panels</p>
+            <p class="text-zinc-300 text-lg">A self-replicating structural material that serves as energy-positive high-temperature thermal battery, laser source, air/water purifier, and load-bearing building element.</p>
+            <!-- More details can be expanded here -->
+        </div>
+
+        <!-- Add more sections from the Markdown -->
+
+        <div class="text-center text-emerald-400 mt-16">
+            <p class="text-sm">This is a living document — the vision continues to branch and evolve.</p>
+        </div>
+    </div>
+
+    <footer class="border-t border-zinc-800 py-12 text-center text-zinc-400">
+        Autarky — Regenerative Self-Sufficiency & Freedom • Always evolving
     </footer>
+
 </body>
 </html>
