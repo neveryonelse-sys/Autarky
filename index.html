@@ -12,32 +12,7 @@
         .hero-font { font-family: 'Roboto', sans-serif; font-weight: 700; }
         .nav-link { transition: all 0.3s ease; }
         .nav-link:hover { color: #34d399; transform: translateY(-1px); }
-        
-        .video-container { 
-            position: relative; 
-            height: 100vh; 
-            overflow: hidden; 
-            margin-bottom: -100px; 
-        }
-        .video-bg { 
-            position: absolute; 
-            top: 0; 
-            left: 0; 
-            width: 100%; 
-            height: 100%; 
-            object-fit: cover; 
-            z-index: -1; 
-            filter: brightness(0.75) contrast(1.1); 
-        }
-        
-        .section { 
-            margin-top: -90px; 
-            padding-top: 90px; 
-        }
-        
-        p, .text-zinc-300, .text-emerald-100 {
-            text-shadow: 0 2px 4px rgba(0,0,0,0.85);
-        }
+        .section { scroll-margin-top: 90px; }
     </style>
 </head>
 <body class="bg-zinc-950 text-zinc-100">
@@ -50,7 +25,7 @@
             <div class="hidden md:flex items-center gap-8 text-sm font-medium">
                 <a href="#philosophy" class="nav-link">Philosophy</a>
                 <a href="#biological" class="nav-link">Biological Core</a>
-                <a href="#fjh" class="nav-link">Tools</a>
+                <a href="#tools" class="nav-link">Tools</a>
                 <a href="#remediation" class="nav-link">Remediation</a>
                 <a href="#energy" class="nav-link">Energy</a>
                 <a href="#monolith" class="nav-link">Monolith</a>
@@ -67,7 +42,7 @@
         <div id="mobile-menu" class="hidden md:hidden max-w-screen-2xl mx-auto px-8 pb-6 flex flex-col gap-4 text-sm font-medium bg-zinc-900 border-t border-zinc-800">
             <a href="#philosophy" class="nav-link py-2">Philosophy</a>
             <a href="#biological" class="nav-link py-2">Biological Core</a>
-            <a href="#fjh" class="nav-link py-2">Tools</a>
+            <a href="#tools" class="nav-link py-2">Tools</a>
             <a href="#remediation" class="nav-link py-2">Remediation</a>
             <a href="#energy" class="nav-link py-2">Energy</a>
             <a href="#monolith" class="nav-link py-2">Monolith</a>
@@ -79,85 +54,55 @@
     </nav>
 
     <!-- Hero -->
-    <section class="video-container">
-        <video class="video-bg" autoplay loop muted playsinline>
-            <source src="hero-video.mp4" type="video/mp4">
-        </video>
-        <div class="absolute inset-0 flex items-center">
-            <div class="max-w-screen-2xl mx-auto px-8 text-center">
-                <h1 class="hero-font text-5xl md:text-7xl lg:text-8xl tracking-tighter leading-none mb-8 text-white">Regenerative Self-Sufficiency &amp; Freedom</h1>
-                <p class="text-xl md:text-2xl lg:text-3xl text-emerald-100 max-w-4xl mx-auto">Providing for all at no cost through a fully decentralized approach.<br>From zero-sum scarcity to win-win abundance.<br>A complete closed-loop ecosystem that restores the Earth.</p>
-            </div>
+    <section class="min-h-screen flex items-center bg-gradient-to-br from-zinc-950 via-emerald-950 to-teal-950">
+        <div class="max-w-screen-2xl mx-auto px-8 text-center">
+            <h1 class="hero-font text-6xl md:text-8xl tracking-tighter leading-none mb-8">Regenerative Self-Sufficiency & Freedom</h1>
+            <p class="text-2xl md:text-3xl text-emerald-100 max-w-4xl mx-auto">Providing for all at no cost through a fully decentralized approach.<br>From zero-sum scarcity to win-win abundance.<br>A complete closed-loop ecosystem that restores the Earth.</p>
         </div>
     </section>
 
     <!-- Philosophy -->
-    <section id="philosophy" class="video-container">
-        <video class="video-bg" autoplay loop muted playsinline>
-            <source src="philosophy-video.mp4" type="video/mp4">
-        </video>
-        <div class="absolute inset-0 flex items-center">
-            <div class="max-w-screen-2xl mx-auto px-8 text-center">
-                <h2 class="text-5xl md:text-6xl font-semibold mb-8 text-white">Core Philosophy</h2>
-                <p class="text-xl md:text-2xl text-emerald-100 max-w-3xl mx-auto">Utilizing abundant, ungatable elements found practically anywhere.<br>Zero-waste. Carbon-negative. No sacrifice required.</p>
-                <a href="philosophy.html" class="inline-flex items-center gap-2 mt-12 text-white hover:text-emerald-300 font-medium text-lg">Read full philosophy →</a>
-            </div>
+    <section id="philosophy" class="section py-24 bg-emerald-950">
+        <div class="max-w-screen-2xl mx-auto px-8">
+            <h2 class="text-5xl font-semibold mb-6">Core Philosophy</h2>
+            <p class="text-xl text-zinc-300 max-w-3xl">Utilizing abundant, ungatable elements found practically anywhere.<br>Zero-waste. Carbon-negative. No sacrifice required.</p>
+            <a href="philosophy.html" class="inline-flex items-center gap-2 mt-8 text-emerald-400 hover:text-emerald-300 font-medium">Read full philosophy →</a>
         </div>
     </section>
 
     <!-- Biological Core -->
-    <section id="biological" class="video-container">
-        <video class="video-bg" autoplay loop muted playsinline>
-            <source src="biological-core-video.mp4" type="video/mp4">
-        </video>
-        <div class="absolute inset-0 flex items-center">
-            <div class="max-w-screen-2xl mx-auto px-8 text-center">
-                <h2 class="text-5xl md:text-6xl font-semibold mb-8 text-white">Biological Core</h2>
-                <p class="text-xl md:text-2xl text-emerald-100 max-w-3xl mx-auto">Chlorella as explosive biomass engine + Mycelium as natural flocculator and structural binder.</p>
-                <a href="biological-core.html" class="inline-flex items-center gap-2 mt-12 text-white hover:text-emerald-300 font-medium text-lg">Explore Biological Core →</a>
-            </div>
+    <section id="biological" class="section py-24 bg-zinc-900">
+        <div class="max-w-screen-2xl mx-auto px-8">
+            <h2 class="text-5xl font-semibold mb-6">Biological Core</h2>
+            <p class="text-xl text-zinc-300 max-w-3xl">Chlorella as explosive biomass engine + Mycelium as natural flocculator and structural binder.</p>
+            <a href="biological-core.html" class="inline-flex items-center gap-2 mt-8 text-emerald-400 hover:text-emerald-300 font-medium">Explore Biological Core →</a>
         </div>
     </section>
 
     <!-- Tools -->
-    <section id="fjh" class="video-container">
-        <video class="video-bg" autoplay loop muted playsinline>
-            <source src="fjh-video.mp4" type="video/mp4">
-        </video>
-        <div class="absolute inset-0 flex items-center">
-            <div class="max-w-screen-2xl mx-auto px-8 text-center">
-                <h2 class="text-5xl md:text-6xl font-semibold mb-8 text-white">Tools</h2>
-                <p class="text-xl md:text-2xl text-emerald-100 max-w-3xl mx-auto">Chlorella Photobioreactors, HTC, Flash Joule Heating (FJH), and lasers — the core processing toolkit of Autarky.</p>
-                <a href="fjh.html" class="inline-flex items-center gap-2 mt-12 text-white hover:text-emerald-300 font-medium text-lg">Explore the Full Toolset →</a>
-            </div>
+    <section id="tools" class="section py-24 bg-emerald-950">
+        <div class="max-w-screen-2xl mx-auto px-8">
+            <h2 class="text-5xl font-semibold mb-6">Tools</h2>
+            <p class="text-xl text-zinc-300 max-w-3xl">Chlorella Photobioreactors, Hydrothermal Carbonization (HTC), Flash Joule Heating (FJH), and lasers — the core processing toolkit of Autarky.</p>
+            <a href="fjh.html" class="inline-flex items-center gap-2 mt-8 text-emerald-400 hover:text-emerald-300 font-medium">Explore the Full Toolset →</a>
         </div>
     </section>
 
     <!-- Remediation -->
-    <section id="remediation" class="video-container">
-        <video class="video-bg" autoplay loop muted playsinline>
-            <source src="remediation-video.mp4" type="video/mp4">
-        </video>
-        <div class="absolute inset-0 flex items-center">
-            <div class="max-w-screen-2xl mx-auto px-8 text-center">
-                <h2 class="text-5xl md:text-6xl font-semibold mb-8 text-white">Planetary Remediation</h2>
-                <p class="text-xl md:text-2xl text-emerald-100 max-w-3xl mx-auto">Active healing of the Earth using photocatalysis and closed-loop processes.</p>
-                <a href="remediation.html" class="inline-flex items-center gap-2 mt-12 text-white hover:text-emerald-300 font-medium text-lg">Discover Remediation →</a>
-            </div>
+    <section id="remediation" class="section py-24 bg-zinc-900">
+        <div class="max-w-screen-2xl mx-auto px-8">
+            <h2 class="text-5xl font-semibold mb-6">Planetary Remediation</h2>
+            <p class="text-xl text-zinc-300 max-w-3xl">Active healing of the Earth using photocatalysis and closed-loop processes.</p>
+            <a href="remediation.html" class="inline-flex items-center gap-2 mt-8 text-emerald-400 hover:text-emerald-300 font-medium">Discover Remediation →</a>
         </div>
     </section>
 
     <!-- Energy -->
-    <section id="energy" class="video-container">
-        <video class="video-bg" autoplay loop muted playsinline>
-            <source src="energy-video.mp4" type="video/mp4">
-        </video>
-        <div class="absolute inset-0 flex items-center">
-            <div class="max-w-screen-2xl mx-auto px-8 text-center">
-                <h2 class="text-5xl md:text-6xl font-semibold mb-8 text-white">Energy Architecture</h2>
-                <p class="text-xl md:text-2xl text-emerald-100 max-w-3xl mx-auto">Graphene and Silicon Thermophotovoltaic (TPV) systems powered by the Multifunctional Thermal Monolith.</p>
-                <a href="energy.html" class="inline-flex items-center gap-2 mt-12 text-white hover:text-emerald-300 font-medium text-lg">Explore Energy Architecture →</a>
-            </div>
+    <section id="energy" class="section py-24 bg-emerald-950">
+        <div class="max-w-screen-2xl mx-auto px-8">
+            <h2 class="text-5xl font-semibold mb-6">Energy Architecture</h2>
+            <p class="text-xl text-zinc-300 max-w-3xl">Graphene and Silicon Thermophotovoltaic (TPV) systems powered by the Multifunctional Thermal Monolith.</p>
+            <a href="energy.html" class="inline-flex items-center gap-2 mt-8 text-emerald-400 hover:text-emerald-300 font-medium">Explore Energy Architecture →</a>
         </div>
     </section>
 
@@ -171,7 +116,7 @@
     </section>
 
     <!-- Laser -->
-    <section id="laser" class="section py-24">
+    <section id="laser" class="section py-24 bg-emerald-950">
         <div class="max-w-screen-2xl mx-auto px-8">
             <h2 class="text-5xl font-semibold mb-6">Laser Architecture</h2>
             <p class="text-xl text-zinc-300 max-w-3xl">Integrated random laser + diamond Raman converter built into the Monolith.</p>
@@ -189,7 +134,7 @@
     </section>
 
     <!-- Road Ahead -->
-    <section id="road-ahead" class="section py-24">
+    <section id="road-ahead" class="section py-24 bg-emerald-950">
         <div class="max-w-screen-2xl mx-auto px-8">
             <h2 class="text-5xl font-semibold mb-6">Road Ahead</h2>
             <p class="text-xl text-zinc-300 max-w-3xl">Earth-First Prototype → Long-Term Space Goal.</p>
@@ -201,7 +146,7 @@
     <section id="the-universe" class="section py-24 bg-zinc-900">
         <div class="max-w-screen-2xl mx-auto px-8">
             <h2 class="text-5xl font-semibold mb-6">The Universe</h2>
-            <p class="text-xl text-zinc-300 max-w-3xl">An open-source operating system for society — a collective intelligence framework of 22 Major Arcana agents.</p>
+            <p class="text-xl text-zinc-300 max-w-3xl">An open-source operating system for society — a collective intelligence framework of 22 Major Arcana agents working together to find positive-sum solutions.</p>
             <a href="the-universe.html" class="inline-flex items-center gap-2 mt-8 text-emerald-400 hover:text-emerald-300 font-medium">Explore The Universe →</a>
         </div>
     </section>
@@ -216,13 +161,6 @@
         hamburger.addEventListener('click', () => {
             mobileMenu.classList.toggle('hidden');
             hamburger.textContent = hamburger.textContent === '☰' ? '✕' : '☰';
-        });
-
-        document.querySelectorAll('.video-bg').forEach(video => {
-            window.addEventListener('scroll', () => {
-                const scrollY = window.scrollY;
-                video.style.transform = `translateY(${scrollY * 0.12}px)`;
-            });
         });
     </script>
 </body>
