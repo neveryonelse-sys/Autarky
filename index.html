@@ -38,11 +38,12 @@
 </head>
 <body class="bg-zinc-950 text-zinc-100">
 
-    <!-- Navbar -->
+        <!-- Navbar -->
     <nav class="sticky top-0 z-50 bg-zinc-950/95 backdrop-blur-md border-b border-zinc-800">
         <div class="max-w-screen-2xl mx-auto px-8 py-5 flex items-center justify-between">
             <a href="index.html" class="flex items-center gap-3 text-3xl font-semibold hero-font tracking-tight">Autarky</a>
             
+            <!-- Desktop Menu -->
             <div class="hidden md:flex items-center gap-8 text-sm font-medium">
                 <a href="#philosophy" class="nav-link">Philosophy</a>
                 <a href="#biological" class="nav-link">Biological Core</a>
@@ -53,10 +54,25 @@
                 <a href="#laser" class="nav-link">Laser</a>
                 <a href="#forge" class="nav-link">Forge</a>
                 <a href="#road-ahead" class="nav-link">Road Ahead</a>
-                <a href="#the-universe" class="nav-link">The Universe</a>
+                <a href="the-universe.html" class="nav-link">The Universe</a>
             </div>
 
-            <button id="hamburger" class="md:hidden text-4xl text-zinc-100 hover:text-emerald-400">☰</button>
+            <!-- Mobile Hamburger -->
+            <button id="hamburger" class="md:hidden text-4xl text-zinc-100 hover:text-emerald-400 transition-colors">☰</button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden max-w-screen-2xl mx-auto px-8 pb-6 flex flex-col gap-4 text-sm font-medium bg-zinc-900 border-t border-zinc-800">
+            <a href="#philosophy" class="nav-link py-2">Philosophy</a>
+            <a href="#biological" class="nav-link py-2">Biological Core</a>
+            <a href="#fjh" class="nav-link py-2">Tools</a>
+            <a href="#remediation" class="nav-link py-2">Remediation</a>
+            <a href="#energy" class="nav-link py-2">Energy</a>
+            <a href="#monolith" class="nav-link py-2">Monolith</a>
+            <a href="#laser" class="nav-link py-2">Laser</a>
+            <a href="#forge" class="nav-link py-2">Forge</a>
+            <a href="#road-ahead" class="nav-link py-2">Road Ahead</a>
+            <a href="the-universe.html" class="nav-link py-2">The Universe</a>
         </div>
     </nav>
 
