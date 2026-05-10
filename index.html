@@ -17,15 +17,13 @@
         font-weight: 700; 
     }
     
-    /* Much thinner black outline on body text */
-    p, .prose, .text-zinc-300, .text-emerald-100 {
-        -webkit-text-stroke: 0.6px #000;
+    /* Much thinner and cleaner outline for body text only */
+    p, .text-zinc-300, .text-emerald-100 {
+        -webkit-text-stroke: 0.4px #000;
         text-shadow: 
-            0 0 6px rgba(0,0,0,0.8),
-            1px 1px 0 #000,
-            -1px -1px 0 #000,
-            1px -1px 0 #000,
-            -1px 1px 0 #000;
+            0 0 6px rgba(0,0,0,0.85),
+            1px 1px 1px #000,
+            -1px -1px 1px #000;
     }
 
     .nav-link { 
