@@ -17,7 +17,7 @@
             position: relative; 
             height: 100vh; 
             overflow: hidden; 
-            margin-bottom: -90px; /* Strong overlap */
+            margin-bottom: -90px; 
         }
         .video-bg { 
             position: absolute; 
@@ -30,7 +30,6 @@
             filter: brightness(0.75) contrast(1.1); 
         }
         
-        /* Overlap for solid sections */
         .section { 
             margin-top: -80px; 
             padding-top: 80px; 
@@ -54,7 +53,7 @@
                 <a href="#laser" class="nav-link">Laser</a>
                 <a href="#forge" class="nav-link">Forge</a>
                 <a href="#road-ahead" class="nav-link">Road Ahead</a>
-                <a href="the-universe.html" class="nav-link">The Universe</a>
+                <a href="#the-universe" class="nav-link">The Universe</a>
             </div>
 
             <button id="hamburger" class="md:hidden text-4xl text-zinc-100 hover:text-emerald-400">☰</button>
@@ -130,7 +129,7 @@
         </div>
     </section>
 
-    <!-- Remaining sections (solid background with overlap) -->
+    <!-- Energy, Monolith, Laser, Forge, Road Ahead (solid with overlap) -->
     <section id="energy" class="section py-24 bg-zinc-900">
         <div class="max-w-screen-2xl mx-auto px-8">
             <h2 class="text-5xl font-semibold mb-6">Energy Architecture</h2>
@@ -171,12 +170,20 @@
         </div>
     </section>
 
+    <!-- The Universe - Restored -->
+    <section id="the-universe" class="section py-24 bg-zinc-900">
+        <div class="max-w-screen-2xl mx-auto px-8">
+            <h2 class="text-5xl font-semibold mb-6">The Universe</h2>
+            <p class="text-xl text-zinc-300 max-w-3xl">An open-source operating system for society — a collective intelligence framework of 22 Major Arcana agents working together to find positive-sum solutions.</p>
+            <a href="the-universe.html" class="inline-flex items-center gap-2 mt-8 text-emerald-400 hover:text-emerald-300 font-medium">Explore The Universe (22 Agents) →</a>
+        </div>
+    </section>
+
     <footer class="py-20 text-center border-t border-zinc-800 text-zinc-500">
         Autarky — A living, evolving vision • Always branching
     </footer>
 
     <script>
-        // Hamburger
         const hamburger = document.getElementById('hamburger');
         const mobileMenu = document.getElementById('mobile-menu');
         hamburger.addEventListener('click', () => {
@@ -184,7 +191,6 @@
             hamburger.textContent = hamburger.textContent === '☰' ? '✕' : '☰';
         });
 
-        // Parallax
         document.querySelectorAll('.video-bg').forEach(video => {
             window.addEventListener('scroll', () => {
                 const scrollY = window.scrollY;
