@@ -10,31 +10,11 @@
     <style>
         body { font-family: 'Roboto', system-ui, sans-serif; scroll-behavior: smooth; }
         .hero-font { font-family: 'Roboto', sans-serif; font-weight: 700; }
-        
-        h1 {
-            font-size: 3.2rem;
-            line-height: 1.15;
-            margin-bottom: 2rem;
-            color: #ffffff;
-        }
-        h2 {
-            font-size: 2.4rem;
-            line-height: 1.25;
-            margin-top: 3rem;
-            margin-bottom: 1.4rem;
-            color: #ffffff;
-        }
-        p {
-            font-size: 1.25rem;
-            line-height: 1.7;
-            margin-bottom: 1.8rem;
-            color: #e0e0e0;
-        }
     </style>
 </head>
 <body class="bg-zinc-950 text-zinc-100">
 
-    <!-- Navbar (same as other pages) -->
+    <!-- Navbar (identical to other pages) -->
     <nav class="sticky top-0 z-50 bg-zinc-950/95 backdrop-blur-md border-b border-zinc-800">
         <div class="max-w-screen-2xl mx-auto px-8 py-5 flex items-center justify-between">
             <a href="index.html" class="flex items-center gap-3 text-3xl font-semibold hero-font tracking-tight">Autarky</a>
@@ -60,7 +40,7 @@
     <div class="max-w-screen-2xl mx-auto px-8 py-16">
         <div class="prose prose-invert max-w-none text-zinc-300 leading-relaxed">
             
-            <h1>Philosophy of Autarky</h1>
+            <h1 class="text-5xl md:text-6xl font-semibold mb-10">Philosophy of Autarky</h1>
 
             <p>Autarky is not a political ideology, an economic reform, or a utopian manifesto. It is an open-source engineering project designed to make artificial scarcity obsolete. Its core premise is simple: once the first self-replicating unit exists that can turn any waste into abundant energy, materials, shelter, food, clean air and water, and mitochondrial health optimization, money and centralized control become optional for anyone who chooses to opt in.</p>
 
@@ -108,4 +88,12 @@
     </footer>
 
     <script>
-        const hamburger = document
+        const hamburger = document.getElementById('hamburger');
+        const mobileMenu = document.getElementById('mobile-menu');
+        hamburger.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            hamburger.textContent = hamburger.textContent === '☰' ? '✕' : '☰';
+        });
+    </script>
+</body>
+</html>
