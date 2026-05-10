@@ -25,12 +25,13 @@
         }
 
         .full-screen {
-            height: 100vh;
+            min-height: 100dvh;
             display: flex;
             align-items: center;
             justify-content: center;
             text-align: center;
-            margin-bottom: -90px;   /* Strong cinematic overlap */
+            margin-bottom: -90px;   /* Cinematic overlap */
+            padding-top: 80px;      /* Space for navbar on mobile */
         }
     </style>
 </head>
@@ -60,113 +61,40 @@
 
     <!-- Hero -->
     <section class="full-screen bg-gradient-to-br from-zinc-950 via-emerald-950 to-teal-950">
-        <div class="max-w-screen-2xl mx-auto px-8 text-center">
-            <h1 class="hero-font text-6xl md:text-8xl tracking-tighter leading-none mb-8">Regenerative Self-Sufficiency & Freedom</h1>
-            <p class="text-2xl md:text-3xl text-emerald-100 max-w-4xl mx-auto">Providing for all at no cost through a fully decentralized approach.<br>From zero-sum scarcity to win-win abundance.<br>A complete closed-loop ecosystem that restores the Earth.</p>
+        <div class="max-w-screen-2xl mx-auto px-8">
+            <h1 class="hero-font text-5xl md:text-7xl lg:text-8xl tracking-tighter leading-none mb-8">Regenerative Self-Sufficiency & Freedom</h1>
+            <p class="text-xl md:text-2xl lg:text-3xl text-emerald-100 max-w-4xl mx-auto">Providing for all at no cost through a fully decentralized approach.<br>From zero-sum scarcity to win-win abundance.<br>A complete closed-loop ecosystem that restores the Earth.</p>
         </div>
     </section>
 
     <!-- Philosophy -->
     <section id="philosophy" class="full-screen bg-emerald-950">
-        <div class="max-w-screen-2xl mx-auto px-8 text-center">
-            <h2 class="text-6xl font-semibold mb-8">Core Philosophy</h2>
-            <p class="text-2xl text-emerald-100 max-w-3xl mx-auto">Utilizing abundant, ungatable elements found practically anywhere.<br>Zero-waste. Carbon-negative. No sacrifice required.</p>
+        <div class="max-w-screen-2xl mx-auto px-8">
+            <h2 class="text-5xl md:text-6xl font-semibold mb-8">Core Philosophy</h2>
+            <p class="text-xl md:text-2xl text-emerald-100 max-w-3xl mx-auto">Utilizing abundant, ungatable elements found practically anywhere.<br>Zero-waste. Carbon-negative. No sacrifice required.</p>
             <a href="philosophy.html" class="inline-flex items-center gap-2 mt-12 text-white hover:text-emerald-300 font-medium text-lg">Read full philosophy →</a>
         </div>
     </section>
 
     <!-- Biological Core -->
     <section id="biological" class="full-screen bg-zinc-900">
-        <div class="max-w-screen-2xl mx-auto px-8 text-center">
-            <h2 class="text-6xl font-semibold mb-8">Biological Core</h2>
-            <p class="text-2xl text-emerald-100 max-w-3xl mx-auto">Chlorella as explosive biomass engine + Mycelium as natural flocculator and structural binder.</p>
+        <div class="max-w-screen-2xl mx-auto px-8">
+            <h2 class="text-5xl md:text-6xl font-semibold mb-8">Biological Core</h2>
+            <p class="text-xl md:text-2xl text-emerald-100 max-w-3xl mx-auto">Chlorella as explosive biomass engine + Mycelium as natural flocculator and structural binder.</p>
             <a href="biological-core.html" class="inline-flex items-center gap-2 mt-12 text-white hover:text-emerald-300 font-medium text-lg">Explore Biological Core →</a>
         </div>
     </section>
 
     <!-- Tools -->
     <section id="tools" class="full-screen bg-emerald-950">
-        <div class="max-w-screen-2xl mx-auto px-8 text-center">
-            <h2 class="text-6xl font-semibold mb-8">Tools</h2>
-            <p class="text-2xl text-emerald-100 max-w-3xl mx-auto">Chlorella Photobioreactors, HTC, Flash Joule Heating (FJH), and lasers — the core processing toolkit.</p>
+        <div class="max-w-screen-2xl mx-auto px-8">
+            <h2 class="text-5xl md:text-6xl font-semibold mb-8">Tools</h2>
+            <p class="text-xl md:text-2xl text-emerald-100 max-w-3xl mx-auto">Chlorella Photobioreactors, HTC, Flash Joule Heating (FJH), and lasers — the core processing toolkit.</p>
             <a href="fjh.html" class="inline-flex items-center gap-2 mt-12 text-white hover:text-emerald-300 font-medium text-lg">Explore the Full Toolset →</a>
         </div>
     </section>
 
     <!-- Remediation -->
     <section id="remediation" class="full-screen bg-zinc-900">
-        <div class="max-w-screen-2xl mx-auto px-8 text-center">
-            <h2 class="text-6xl font-semibold mb-8">Planetary Remediation</h2>
-            <p class="text-2xl text-emerald-100 max-w-3xl mx-auto">Active healing of the Earth using photocatalysis and closed-loop processes.</p>
-            <a href="remediation.html" class="inline-flex items-center gap-2 mt-12 text-white hover:text-emerald-300 font-medium text-lg">Discover Remediation →</a>
-        </div>
-    </section>
-
-    <!-- Energy -->
-    <section id="energy" class="full-screen bg-emerald-950">
-        <div class="max-w-screen-2xl mx-auto px-8 text-center">
-            <h2 class="text-6xl font-semibold mb-8">Energy Architecture</h2>
-            <p class="text-2xl text-emerald-100 max-w-3xl mx-auto">Graphene and Silicon Thermophotovoltaic (TPV) systems powered by the Multifunctional Thermal Monolith.</p>
-            <a href="energy.html" class="inline-flex items-center gap-2 mt-12 text-white hover:text-emerald-300 font-medium text-lg">Explore Energy Architecture →</a>
-        </div>
-    </section>
-
-    <!-- Monolith -->
-    <section id="monolith" class="full-screen bg-zinc-900">
-        <div class="max-w-screen-2xl mx-auto px-8 text-center">
-            <h2 class="text-6xl font-semibold mb-8">Thermal Battery / Multifunctional Monolith</h2>
-            <p class="text-2xl text-emerald-100 max-w-3xl mx-auto">Self-replicating structural material that stores heat, generates power, purifies air/water, and produces lasers.</p>
-            <a href="monolith.html" class="inline-flex items-center gap-2 mt-12 text-white hover:text-emerald-300 font-medium text-lg">Dive into the Monolith →</a>
-        </div>
-    </section>
-
-    <!-- Laser -->
-    <section id="laser" class="full-screen bg-emerald-950">
-        <div class="max-w-screen-2xl mx-auto px-8 text-center">
-            <h2 class="text-6xl font-semibold mb-8">Laser Architecture</h2>
-            <p class="text-2xl text-emerald-100 max-w-3xl mx-auto">Integrated random laser + diamond Raman converter built into the Monolith.</p>
-            <a href="laser-architecture.html" class="inline-flex items-center gap-2 mt-12 text-white hover:text-emerald-300 font-medium text-lg">Explore Laser Architecture →</a>
-        </div>
-    </section>
-
-    <!-- Forge -->
-    <section id="forge" class="full-screen bg-zinc-900">
-        <div class="max-w-screen-2xl mx-auto px-8 text-center">
-            <h2 class="text-6xl font-semibold mb-8">Metastellar Forge</h2>
-            <p class="text-2xl text-emerald-100 max-w-3xl mx-auto">Self-bootstrapping synthesis engine for advanced metamaterials.</p>
-            <a href="forge.html" class="inline-flex items-center gap-2 mt-12 text-white hover:text-emerald-300 font-medium text-lg">Discover the Forge →</a>
-        </div>
-    </section>
-
-    <!-- Road Ahead -->
-    <section id="road-ahead" class="full-screen bg-emerald-950">
-        <div class="max-w-screen-2xl mx-auto px-8 text-center">
-            <h2 class="text-6xl font-semibold mb-8">Road Ahead</h2>
-            <p class="text-2xl text-emerald-100 max-w-3xl mx-auto">Earth-First Prototype → Long-Term Space Goal.</p>
-            <a href="road-ahead.html" class="inline-flex items-center gap-2 mt-12 text-white hover:text-emerald-300 font-medium text-lg">See the Full Roadmap →</a>
-        </div>
-    </section>
-
-    <!-- The Universe -->
-    <section id="the-universe" class="full-screen bg-zinc-900">
-        <div class="max-w-screen-2xl mx-auto px-8 text-center">
-            <h2 class="text-6xl font-semibold mb-8">The Universe</h2>
-            <p class="text-2xl text-emerald-100 max-w-3xl mx-auto">An open-source operating system for society — a collective intelligence framework of 22 Major Arcana agents.</p>
-            <a href="the-universe.html" class="inline-flex items-center gap-2 mt-12 text-white hover:text-emerald-300 font-medium text-lg">Explore The Universe →</a>
-        </div>
-    </section>
-
-    <footer class="py-20 text-center border-t border-zinc-800 text-zinc-500">
-        Autarky — A living, evolving vision • Always branching
-    </footer>
-
-    <script>
-        const hamburger = document.getElementById('hamburger');
-        const mobileMenu = document.getElementById('mobile-menu');
-        hamburger.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
-            hamburger.textContent = hamburger.textContent === '☰' ? '✕' : '☰';
-        });
-    </script>
-</body>
-</html>
+        <div class="max-w-screen-2xl mx-auto px-8">
+            <h2 class="text-5xl md
