@@ -6,97 +6,85 @@
     <title>Metastellar Forge — Autarky</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-<style>
-    body {
-        font-family: 'Roboto', system-ui, sans-serif;
-    }
-    .hero-font {
-        font-family: 'Roboto', sans-serif;
-        font-weight: 700;
-    }
-    .section-header::after {
-        content: '';
-        position: absolute;
-        bottom: -8px;
-        left: 0;
-        width: 80px;
-        height: 4px;
-        background: linear-gradient(to right, #10b981, #34d399);
-    }
-</style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        body { font-family: 'Roboto', system-ui, sans-serif; scroll-behavior: smooth; }
+        .hero-font { font-family: 'Roboto', sans-serif; font-weight: 700; }
+    </style>
 </head>
 <body class="bg-zinc-950 text-zinc-100">
 
-    <!-- Sticky Navigation -->
+    <!-- Navbar -->
     <nav class="sticky top-0 z-50 bg-zinc-950/95 backdrop-blur-md border-b border-zinc-800">
-        <div class="max-w-screen-2xl mx-auto px-8 py-4 flex items-center justify-between">
-            <a href="index.html" class="flex items-center gap-3 text-2xl font-semibold hero-font tracking-tight">Autarky</a>
-            <div class="flex gap-8 text-sm font-medium">
-                <a href="index.html" class="hover:text-emerald-400 transition-colors">Home</a>
+        <div class="max-w-screen-2xl mx-auto px-8 py-5 flex items-center justify-between">
+            <a href="index.html" class="flex items-center gap-3 text-3xl font-semibold hero-font tracking-tight">Autarky</a>
+            
+            <div class="hidden md:flex items-center gap-8 text-sm font-medium">
                 <a href="philosophy.html" class="hover:text-emerald-400 transition-colors">Philosophy</a>
                 <a href="biological-core.html" class="hover:text-emerald-400 transition-colors">Biological Core</a>
-                <a href="fjh.html" class="hover:text-emerald-400 transition-colors">FJH</a>
+                <a href="tools.html" class="hover:text-emerald-400 transition-colors">Tools</a>
                 <a href="remediation.html" class="hover:text-emerald-400 transition-colors">Remediation</a>
                 <a href="energy.html" class="hover:text-emerald-400 transition-colors">Energy</a>
                 <a href="monolith.html" class="hover:text-emerald-400 transition-colors">Monolith</a>
+                <a href="laser-architecture.html" class="hover:text-emerald-400 transition-colors">Laser</a>
                 <a href="forge.html" class="text-emerald-400 font-semibold">Forge</a>
                 <a href="road-ahead.html" class="hover:text-emerald-400 transition-colors">Road Ahead</a>
+                <a href="the-universe.html" class="hover:text-emerald-400 transition-colors">The Universe</a>
             </div>
+
+            <button id="hamburger" class="md:hidden text-4xl text-zinc-100 hover:text-emerald-400">☰</button>
         </div>
     </nav>
 
     <!-- Hero -->
-    <header class="min-h-[60vh] flex items-center bg-gradient-to-br from-zinc-950 via-purple-950 to-zinc-950">
-        <div class="max-w-screen-2xl mx-auto px-8 py-20 text-center">
-            <h1 class="hero-font text-6xl md:text-7xl tracking-tighter leading-none mb-6">Metastellar Forge</h1>
-            <p class="text-3xl text-purple-300">Later-Stage Self-Bootstrapping Synthesis Engine</p>
+    <header class="min-h-screen flex items-center bg-gradient-to-br from-zinc-950 via-emerald-950 to-teal-950">
+        <div class="max-w-screen-2xl mx-auto px-8 py-24 text-center">
+            <h1 class="hero-font text-4xl md:text-5xl lg:text-6xl tracking-tighter leading-none mb-6">Metastellar Forge</h1>
+            <p class="text-xl md:text-2xl text-emerald-100 max-w-3xl mx-auto">The universal matter synthesizer — a self-bootstrapping, evolutionary fabrication engine capable of infinite 3D material combinations.</p>
         </div>
     </header>
 
-    <div class="max-w-screen-2xl mx-auto px-8 py-16">
-        <div class="prose prose-invert max-w-none text-zinc-300 text-lg leading-relaxed">
-            <h2 class="text-4xl font-semibold mb-8">Overview</h2>
-            <p>The Metastellar Forge is an iterative, self-bootstrapping High-Temperature High-Pressure (HTHP) device that upgrades its own containment with every cycle. It represents the crowning synthesis capability of the Autarky system.</p>
+    <div class="max-w-screen-2xl mx-auto px-8 py-16 prose prose-invert max-w-none text-zinc-300">
+        
+        <h2 class="text-4xl md:text-5xl font-semibold mb-8">The Universal Matter Synthesizer</h2>
+        <p>The Metastellar Forge is the advanced fabrication heart of Autarky. It takes the raw outputs of the Biological Core, Tools, and Monolith and rearranges atoms and molecules into any desired material or metamaterial — on demand, at any scale.</p>
 
-            <h2 class="text-4xl font-semibold mt-16 mb-8">Key Capabilities</h2>
-            <ul class="list-disc pl-6 space-y-4">
-                <li><strong>Programmable Supramolecular Templating</strong> using CB[8] + different carbon dots (CDs) for precise hierarchical, doped metamaterials.</li>
-                <li><strong>Multi-Physics Synthesis</strong>: lasers, microwaves (standing waves), ultrasound, THz, electric/magnetic fields, eventual z-pinch.</li>
-                <li><strong>Zoned & Selective Processing</strong>: Protective outer layers and selective scCO₂ allow delicate inner components to survive extreme conditions.</li>
-                <li><strong>Self-Upgrading Containment</strong>: Each cycle improves the Forge's own materials and structure.</li>
-            </ul>
+        <h2 class="text-4xl md:text-5xl font-semibold mt-16 mb-8">Evolutionary Self-Upgrading Ability</h2>
+        <p>Unlike static machines, the Forge is alive in its evolution. Each generation improves itself using the laser, FJH, and monolith heat. It learns from every cycle, refining its internal processes, expanding its material library, and increasing precision and efficiency. The Forge literally upgrades its own hardware and software (control algorithms) with every replication cycle, becoming more capable over time without external intervention.</p>
 
-            <h2 class="text-4xl font-semibold mt-16 mb-8">Inputs & Process</h2>
-            <p>Layered precursors including:</p>
-            <ul class="list-disc pl-6 space-y-3">
-                <li>Chlorella / mycelium biomass</li>
-                <li>Carbon dots (CDs)</li>
-                <li>PDA (polydopamine)</li>
-                <li><strong>CB[8] + tailored carbon dots</strong> for programmable supramolecular assembly</li>
-            </ul>
+        <h2 class="text-4xl md:text-5xl font-semibold mt-16 mb-8">Infinite 3D Material Combinations & Layering</h2>
+        <p>Input materials (graphene, carbon dots, aerogels, hydrochar, mycelium composites, SiC, metals from regolith, etc.) can be varied and positioned in true 3D space with infinite combinations and layers. The Forge uses the monolith’s laser for precise direct-writing, FJH for instant material transformation, and biological templates for complex microstructures. This allows it to create functionally graded metamaterials, nested composites, and entirely new substances that have never existed before.</p>
 
-            <h2 class="text-4xl font-semibold mt-16 mb-8">Unique Features</h2>
-            <div class="grid md:grid-cols-2 gap-8 mt-8">
-                <div class="bg-zinc-900 p-8 rounded-3xl">
-                    <h3 class="text-2xl font-semibold mb-4">AI-Guided “Songs”</h3>
-                    <p class="text-zinc-400">Musicians can map creative parameters to synthesis conditions using a Melda-style VST interface (MSoundFactory / MXXX inspired). Sound design directly influences material creation.</p>
-                </div>
-                <div class="bg-zinc-900 p-8 rounded-3xl">
-                    <h3 class="text-2xl font-semibold mb-4">Metamaterial Creation</h3>
-                    <p class="text-zinc-400">Produces ultra-high-performance hierarchical metamaterials, including defensive shelters capable of withstanding nuclear-level events, extreme weather, impacts, and radiation.</p>
-                </div>
-            </div>
+        <h2 class="text-4xl md:text-5xl font-semibold mt-16 mb-8">How It Works</h2>
+        <p>The Forge integrates the full toolset:
+            <br>• Biological templates (mycelium scaffolds) provide nanoscale architecture
+            <br>• FJH and HTC supply custom carbons and dopants
+            <br>• Monolith heat and laser enable high-temperature synthesis and precise deposition
+            <br>• Real-time feedback from embedded sensors allows adaptive layering
+        </p>
 
-            <div class="mt-20 text-center">
-                <a href="index.html" class="inline-flex items-center gap-3 px-8 py-4 bg-zinc-800 hover:bg-zinc-700 rounded-3xl text-lg font-medium">
-                    ← Back to Home
-                </a>
-            </div>
-        </div>
+        <h2 class="text-4xl md:text-5xl font-semibold mt-16 mb-8">From Local Waste to Advanced Metamaterials</h2>
+        <p>Starting with nothing more than biomass, sand, and sunlight, the Forge can synthesize:
+            <br>• Ultra-strong lightweight structural panels
+            <br>• High-efficiency photonic and electronic components
+            <br>• Self-healing coatings and smart materials
+            <br>• Propulsion components, optical systems, and energy storage devices
+        </p>
+
+        <p class="mt-12 text-emerald-300 font-medium">The Metastellar Forge turns the entire Autarky system into a true universal fabricator — one that evolves, scales, and ultimately enables the transition from Earth-first prototypes to interstellar civilization.</p>
     </div>
 
-    <footer class="py-12 text-center text-zinc-500 text-sm border-t border-zinc-800">
-        Autarky — Living Vision • Metastellar Forge
+    <footer class="py-12 text-center text-zinc-500 border-t border-zinc-800">
+        <a href="index.html" class="text-emerald-400 hover:text-emerald-300">← Back to Home</a>
     </footer>
+
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const mobileMenu = document.getElementById('mobile-menu');
+        hamburger.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            hamburger.textContent = hamburger.textContent === '☰' ? '✕' : '☰';
+        });
+    </script>
 </body>
 </html>
