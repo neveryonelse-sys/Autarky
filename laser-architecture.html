@@ -6,78 +6,80 @@
     <title>Laser Architecture — Autarky</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-<style>
-    body {
-        font-family: 'Roboto', system-ui, sans-serif;
-    }
-    .hero-font {
-        font-family: 'Roboto', sans-serif;
-        font-weight: 700;
-    }
-    .section-header::after {
-        content: '';
-        position: absolute;
-        bottom: -8px;
-        left: 0;
-        width: 80px;
-        height: 4px;
-        background: linear-gradient(to right, #10b981, #34d399);
-    }
-</style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        body { font-family: 'Roboto', system-ui, sans-serif; scroll-behavior: smooth; }
+        .hero-font { font-family: 'Roboto', sans-serif; font-weight: 700; }
+    </style>
 </head>
 <body class="bg-zinc-950 text-zinc-100">
 
-         <!-- Hero -->
+    <!-- Navbar -->
+    <nav class="sticky top-0 z-50 bg-zinc-950/95 backdrop-blur-md border-b border-zinc-800">
+        <div class="max-w-screen-2xl mx-auto px-8 py-5 flex items-center justify-between">
+            <a href="index.html" class="flex items-center gap-3 text-3xl font-semibold hero-font tracking-tight">Autarky</a>
+            
+            <div class="hidden md:flex items-center gap-8 text-sm font-medium">
+                <a href="philosophy.html" class="hover:text-emerald-400 transition-colors">Philosophy</a>
+                <a href="biological-core.html" class="hover:text-emerald-400 transition-colors">Biological Core</a>
+                <a href="tools.html" class="hover:text-emerald-400 transition-colors">Tools</a>
+                <a href="remediation.html" class="hover:text-emerald-400 transition-colors">Remediation</a>
+                <a href="energy.html" class="hover:text-emerald-400 transition-colors">Energy</a>
+                <a href="monolith.html" class="hover:text-emerald-400 transition-colors">Monolith</a>
+                <a href="laser-architecture.html" class="text-emerald-400 font-semibold">Laser</a>
+                <a href="forge.html" class="hover:text-emerald-400 transition-colors">Forge</a>
+                <a href="road-ahead.html" class="hover:text-emerald-400 transition-colors">Road Ahead</a>
+                <a href="the-universe.html" class="hover:text-emerald-400 transition-colors">The Universe</a>
+            </div>
+
+            <button id="hamburger" class="md:hidden text-4xl text-zinc-100 hover:text-emerald-400">☰</button>
+        </div>
+    </nav>
+
+    <!-- Hero -->
     <header class="min-h-screen flex items-center bg-gradient-to-br from-zinc-950 via-emerald-950 to-teal-950">
         <div class="max-w-screen-2xl mx-auto px-8 py-24 text-center">
-            <h1 class="hero-font text-6xl md:text-7xl tracking-tighter leading-none">Laser Architecture</h1>
-            <p class="mt-8 text-2xl text-emerald-100 max-w-3xl mx-auto">Integrated random laser + diamond Raman converter built into the Monolith during a single FJH step</p>
+            <h1 class="hero-font text-4xl md:text-5xl lg:text-6xl tracking-tighter leading-none mb-6">Laser Architecture</h1>
+            <p class="text-xl md:text-2xl text-emerald-100 max-w-3xl mx-auto">High-gain, self-pumped random laser with integrated diamond Raman beam cleanup — built directly into the monolith during a single FJH step.</p>
         </div>
     </header>
 
-    <div class="max-w-screen-2xl mx-auto px-8 py-16 prose prose-invert max-w-none text-zinc-300 leading-relaxed">
-        <h2 class="text-4xl font-semibold mb-8 section-header">1. Overview</h2>
-        <p>The <strong>non-TPV face</strong> of the monolith is engineered during the same single arc-welder Flash Joule Heating (FJH) step to function as a high-gain, self-pumped random laser with integrated diamond Raman beam cleanup.</p>
-        <p>No external optics, mirrors, or gain crystals are required. Everything is created in-situ from the same mycelium/chlorella/hydrochar + Mg/Si precursors. The laser is optically and thermally pumped by the blackbody radiation of the molten-Si/SiC core, producing a high-quality, narrow-linewidth, near-diffraction-limited beam suitable for self-replication and material processing.</p>
+    <div class="max-w-screen-2xl mx-auto px-8 py-16 prose prose-invert max-w-none text-zinc-300">
+        
+        <h2 class="text-4xl md:text-5xl font-semibold mb-8">Integrated Random Laser + Diamond Raman Converter</h2>
+        <p>The non-TPV face of the monolith is engineered in the same single Flash Joule Heating step to function as a high-gain, self-pumped random laser with integrated diamond Raman beam cleanup. No external optics, mirrors, or gain crystals are required — everything is created in-situ from the same mycelium/chlorella/hydrochar + Mg/Si precursors already used for the thermal battery core.</p>
 
-        <h2 class="text-4xl font-semibold mt-16 mb-8 section-header">2. Asymmetric FJH Engineering (Laser Face Only)</h2>
-        <p>During pre-form preparation perform one additional asymmetric layering step on the laser-facing side only:</p>
-        <ul class="list-disc pl-6 space-y-3">
-            <li><strong>Mg source</strong>: Chlorella bioaccumulated Mg or trace magnesium salt</li>
-            <li><strong>Hydrochar precursor</strong>: Longer HTC time (6–12 h) for N/Si-rich hydrochar</li>
-            <li><strong>Layering</strong>: Spray or press Mg-doped hydrochar preferentially on the laser face (10–20 wt%)</li>
+        <h2 class="text-4xl md:text-5xl font-semibold mt-16 mb-8">Asymmetric FJH Engineering (Laser Face Only)</h2>
+        <p>During pre-form preparation, an additional asymmetric layering step is performed on the laser-facing side only: Mg-rich hydrochar or Chlorella (which naturally bioaccumulates Mg) is concentrated on that face. This creates the precise doping profile needed for efficient random lasing while the opposite face remains optimized for TPV power generation.</p>
+
+        <h2 class="text-4xl md:text-5xl font-semibold mt-16 mb-8">Pumping & Beam Quality</h2>
+        <p>The laser is optically and thermally pumped by the intense blackbody radiation and latent-heat stability of the molten-Si/SiC core. The Mg-doped graphene matrix, combined with N/Si-co-doped carbon dots and biomass-derived scattering micro-cubes, produces a high-quality, narrow-linewidth, near-diffraction-limited beam. A final diamond Raman conversion stage (grown in-situ from bio-methane/H₂) further cleans and stabilizes the output.</p>
+
+        <h2 class="text-4xl md:text-5xl font-semibold mt-16 mb-8">Self-Replication & Fabrication Applications</h2>
+        <p>The collimated laser beam is deliberately engineered as the primary fabrication tool of the replicator:</p>
+        <ul class="list-disc pl-6 space-y-4 text-lg">
+            <li>Laser sintering of new mycelium/hydrochar/Si preforms into fresh monoliths</li>
+            <li>Ablation and direct writing of electrodes, SiC containment shells, and optical windows</li>
+            <li>Powering secondary FJH reactors or HTC vessels built from previous-generation monoliths</li>
         </ul>
 
-        <h2 class="text-4xl font-semibold mt-16 mb-8 section-header">3. Gain Medium – N/Si-co-doped Carbon Dots + Nanodiamonds</h2>
-        <p>Primary gain: N/Si-co-doped CDs (emission 480–540 nm). Secondary: Flash-nucleated nanodiamonds (NDs) for Raman conversion.</p>
+        <h2 class="text-4xl md:text-5xl font-semibold mt-16 mb-8">Laser Propulsion Highway</h2>
+        <p>In the long-term space phase, fleets of monoliths can be arranged into a continuous “laser propulsion highway.” Each monolith fires a precisely aimed, high-power beam at the next unit in the chain (or at departing spacecraft), providing continuous laser propulsion without onboard propellant. This creates an efficient, scalable interstellar transport network where the same self-replicating infrastructure that builds habitats also powers high-velocity travel across the solar system and beyond.</p>
 
-        <h2 class="text-4xl font-semibold mt-16 mb-8 section-header">4. Pumping Mechanism</h2>
-        <p>Thermal + optical pumping from the stable high-temperature molten-Si/SiC core. Mg doping broadens emissivity for ideal overlap with CD absorption.</p>
-
-        <h2 class="text-4xl font-semibold mt-16 mb-8 section-header">5. Cavity / Feedback Architecture</h2>
-        <p>Random laser cavity created by the 3D porous mycelium-CGC + flash-graphene network (Anderson localization). Distributed feedback from graphene flakes and micro-cavities.</p>
-
-        <h2 class="text-4xl font-semibold mt-16 mb-8 section-header">6. Beam Cleanup & Conversion – Diamond Raman Converter</h2>
-        <p>Initial random laser output undergoes stimulated Raman scattering in NDs (1332 cm⁻¹ shift → ~573 nm yellow-orange). Results in dramatically narrowed, spatially cleaned, near-diffraction-limited beam.</p>
-
-        <h2 class="text-4xl font-semibold mt-16 mb-8 section-header">7. Performance Characteristics (Projected)</h2>
-        <ul class="list-disc pl-6 space-y-3">
-            <li>Wavelength: Tunable 480–540 nm → 573 nm primary Raman line</li>
-            <li>Power: Watts to tens of watts continuous</li>
-            <li>Beam quality: M² ≈ 1.2–1.5</li>
-            <li>Stability: Latent-heat plateau keeps pump intensity rock-solid</li>
-        </ul>
-
-        <h2 class="text-4xl font-semibold mt-16 mb-8 section-header">8. Self-Replication Applications</h2>
-        <p>Laser sintering of new monolith preforms, direct writing of electrodes/SiC shells, powering secondary reactors, cutting/welding habitat modules, etc.</p>
-
-        <h2 class="text-4xl font-semibold mt-16 mb-8 section-header">9. Why This Architecture Fits the Zero-Waste Philosophy</h2>
-        <p>All components produced from abundant biomass + regolith. No external crystals or rare-earth dopants. The laser emerges naturally from the same FJH step that creates the thermal battery — turning the monolith into a true active replicator.</p>
+        <p class="mt-12 text-emerald-300 font-medium">The integrated laser turns every monolith into an active fabrication and propulsion node — completing the closed-loop, zero-gatekeeping vision of Autarky.</p>
     </div>
 
     <footer class="py-12 text-center text-zinc-500 border-t border-zinc-800">
         <a href="index.html" class="text-emerald-400 hover:text-emerald-300">← Back to Home</a>
     </footer>
-    </footer>
+
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const mobileMenu = document.getElementById('mobile-menu');
+        hamburger.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            hamburger.textContent = hamburger.textContent === '☰' ? '✕' : '☰';
+        });
+    </script>
 </body>
 </html>
