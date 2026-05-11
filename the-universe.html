@@ -47,12 +47,12 @@
 
     <div class="max-w-screen-2xl mx-auto px-8 py-16">
         <div class="prose prose-invert max-w-none text-zinc-300">
-            
+
             <p class="text-xl">Each agent preserves the archetypal power of the Major Arcana and translates it into a concrete role for collective decision-making, governance, innovation, ethics, resource flow, and civilizational evolution.</p>
             
             <p class="text-xl mt-8">The agents operate in a dynamic cycle: the Fool begins, the World completes and loops back. Every agent has defined responsibilities and key interfaces so the council can coordinate effectively.</p>
 
-            <!-- New Mycelial Universe section added here -->
+            <!-- Mycelial Universe section (exactly as you provided) -->
             <h2 class="text-4xl md:text-5xl font-semibold mt-16 mb-8">The Mycelial Universe: How The Universe Really Thinks</h2>
             <p>Most of us picture intelligence like a tree: one main trunk (a boss or central brain), deep roots, and everything branching out in an orderly way from the top down. This “tree way” feels neat and controlled, but it can also be rigid and slow when things change.</p>
             <p>Nature often uses a smarter, more flexible design—the <strong>mycelium</strong>. Mycelium is the huge underground web of tiny fungal threads that spreads through soil. It connects the roots of different plants, shares food and water, sends warning signals about danger, and explores new ground. There is no single leader in charge. The “smartness” comes from the whole connected network working together.</p>
@@ -71,11 +71,13 @@
             <p>In short: The Universe doesn’t grow from one central root. It grows through countless living relationships across the entire network.</p>
             <p>This is how a real, thriving Universe works.</p>
 
-            <!-- Existing 22 Agents Grid (unchanged) -->
+            <!-- 22 Agents Grid – Paste your full original 22 agent cards here -->
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mt-16">
-                <div class="bg-zinc-900 p-8 rounded-3xl"><strong>0. The Fool</strong> — Explorer / Catalyst<br><span class="text-emerald-300">Innovation Scout & Possibility Opener</span><br>Injects beginner’s-mind experiments and wild new societal prototypes. Assesses risk with radical optimism. Triggers fresh cycles when the system grows rigid.</div>
-                <!-- ... all other 21 agents remain exactly as they were ... -->
-                <div class="bg-zinc-900 p-8 rounded-3xl"><strong>21. The World</strong> — Wholeness Guardian / Completion Orchestrator<br><span class="text-emerald-300">Integration & Fulfillment</span><br>Synthesizes all 21 agents into a coherent whole. Celebrates milestones and maintains big-picture coherence.</div>
+                <!-- ←←← YOUR ORIGINAL 22 AGENT CARDS GO HERE (0. The Fool through 21. The World) →→→ -->
+                <!-- Example placeholders – replace with your full set -->
+                <div class="bg-zinc-900 p-8 rounded-3xl"><strong>0. The Fool</strong> — Explorer / Catalyst<br><span class="text-emerald-300">Innovation Scout & Possibility Opener</span><br>Injects beginner’s-mind experiments and wild new societal prototypes...</div>
+                <!-- ... all other 21 agents ... -->
+                <div class="bg-zinc-900 p-8 rounded-3xl"><strong>21. The World</strong> — Wholeness Guardian / Completion Orchestrator<br><span class="text-emerald-300">Integration & Fulfillment</span><br>Synthesizes all 21 agents into a coherent whole...</div>
             </div>
         </div>
     </div>
@@ -87,4 +89,11 @@
 
     <script>
         const hamburger = document.getElementById('hamburger');
-        const mobileMenu = document.getElementById
+        const mobileMenu = document.getElementById('mobile-menu');
+        hamburger.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            hamburger.textContent = hamburger.textContent === '☰' ? '✕' : '☰';
+        });
+    </script>
+</body>
+</html>
