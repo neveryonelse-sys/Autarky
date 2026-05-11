@@ -22,7 +22,7 @@
             <div class="hidden md:flex items-center gap-8 text-sm font-medium">
                 <a href="philosophy.html" class="hover:text-emerald-400 transition-colors">Philosophy</a>
                 <a href="biological-core.html" class="hover:text-emerald-400 transition-colors">Biological Core</a>
-                <a href="fjh.html" class="hover:text-emerald-400 transition-colors">FJH</a>
+                <a href="tools.html" class="hover:text-emerald-400 transition-colors">Tools</a>
                 <a href="remediation.html" class="hover:text-emerald-400 transition-colors">Remediation</a>
                 <a href="energy.html" class="text-emerald-400 font-semibold">Energy</a>
                 <a href="monolith.html" class="hover:text-emerald-400 transition-colors">Monolith</a>
@@ -39,32 +39,39 @@
     <!-- Hero -->
     <header class="min-h-screen flex items-center bg-gradient-to-br from-zinc-950 via-emerald-950 to-teal-950">
         <div class="max-w-screen-2xl mx-auto px-8 py-24 text-center">
-            <h1 class="hero-font text-6xl md:text-7xl tracking-tighter leading-none mb-6">Energy Architecture</h1>
-            <p class="text-2xl text-emerald-100 max-w-3xl mx-auto">Graphene and Silicon Thermophotovoltaic (TPV) systems powered by the Multifunctional Thermal Monolith</p>
+            <h1 class="hero-font text-4xl md:text-5xl lg:text-6xl tracking-tighter leading-none mb-6">Energy Architecture</h1>
+            <p class="text-xl md:text-2xl text-emerald-100 max-w-3xl mx-auto">Graphene and Silicon Thermophotovoltaic (TPV) systems powered by the Multifunctional Thermal Monolith — with integrated supercapacitors for instantaneous power delivery.</p>
         </div>
     </header>
 
     <div class="max-w-screen-2xl mx-auto px-8 py-16 prose prose-invert max-w-none text-zinc-300">
-        <h2 class="text-4xl font-semibold mb-8">Simple, Scalable, High-Performance Power</h2>
-        <p class="text-xl">The primary energy source in Autarky is **Graphene + Silicon Thermophotovoltaic (TPV) systems** directly driven by the high-temperature blackbody radiation of the Multifunctional Thermal Monolith.</p>
         
-        <p class="mt-8 text-lg">This approach is significantly simpler than traditional turbines while delivering comparable (or superior) power output. The monolith’s stable high-temperature core provides continuous, intense broadband radiation that the TPVs convert efficiently into electricity.</p>
+        <h2 class="text-4xl md:text-5xl font-semibold mb-8">Monolith-Powered Energy System</h2>
+        <p>The Multifunctional Thermal Monolith serves as the stable high-temperature heat source and blackbody radiator for the entire energy architecture. Its latent-heat plateau keeps output rock-solid for hours, enabling highly efficient thermophotovoltaic (TPV) conversion on one face while the opposite face produces the integrated laser.</p>
 
-        <h2 class="text-4xl font-semibold mt-16 mb-8">Why Graphene + Si TPVs?</h2>
-        <ul class="list-disc pl-6 space-y-4 text-lg">
-            <li>No moving parts — extremely reliable and low-maintenance</li>
-            <li>Uses abundant materials (graphene from biomass via FJH, silicon from regolith)</li>
-            <li>High conversion efficiency at the monolith’s operating temperatures</li>
-            <li>Scalable from small modules to large arrays</li>
-            <li>Integrates seamlessly with the monolith’s thermal battery function</li>
-        </ul>
+        <h2 class="text-4xl md:text-5xl font-semibold mt-16 mb-8">Graphene & Silicon TPVs</h2>
+        <p>Graphene (produced via Flash Joule Heating) and silicon-based TPVs capture the broad-spectrum infrared radiation from the molten-Si/SiC core with exceptional efficiency. The monolith’s engineered emissivity and thermal stability make this one of the simplest and most robust solid-state power generators possible — no moving parts, no turbines, no rare-earth materials.</p>
 
-        <p class="mt-12 text-emerald-300 font-medium">The result is a compact, self-contained, zero-maintenance power system that is much easier to bootstrap and replicate than turbine-based designs.</p>
+        <h2 class="text-4xl md:text-5xl font-semibold mt-16 mb-8">Supercapacitors Made from the Same Materials & Tools</h2>
+        <p>Using the exact same FJH process and hydrochar feedstock, the system produces high-performance graphene electrodes and aerogel separators for supercapacitors. These supercaps store and deliver massive bursts of power instantly — perfect for laser operation, tool startup, or peak loads — and are fully integrated into the monolith structure. Because they are made from the same abundant biomass-derived carbons, the entire energy storage loop is closed and self-reinforcing.</p>
+
+        <h2 class="text-4xl md:text-5xl font-semibold mt-16 mb-8">Closed-Loop Energy Flow</h2>
+        <p>TPV electricity powers the tools (FJH, HTC, PBRs, lasers). Waste heat and off-gases are recaptured. Supercapacitors buffer and smooth power delivery. Excess energy can be used for remediation, material synthesis, or self-replication. The result is a highly efficient, decentralized energy system that requires almost no external input once bootstrapped.</p>
+
+        <p class="mt-12 text-emerald-300 font-medium">This architecture turns the Monolith into a complete power plant, energy storage bank, and fabrication engine — all from locally available waste and abundant elements.</p>
     </div>
 
     <footer class="py-12 text-center text-zinc-500 border-t border-zinc-800">
         <a href="index.html" class="text-emerald-400 hover:text-emerald-300">← Back to Home</a>
     </footer>
 
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const mobileMenu = document.getElementById('mobile-menu');
+        hamburger.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            hamburger.textContent = hamburger.textContent === '☰' ? '✕' : '☰';
+        });
+    </script>
 </body>
 </html>
