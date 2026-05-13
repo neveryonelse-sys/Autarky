@@ -120,3 +120,47 @@ This system turns ambient air into a reliable water source while recycling your 
 
 **Next Steps Suggestion**  
 Print this file or open in a Markdown editor. Start with a small prototype sorbent tray (10–20 g) to test adsorption/desorption with your thermoacoustic setup. Let me know if you want a BOM template, detailed synthesis protocol, or process-flow diagram added as an appendix!
+
+# Bio-Enhanced Graphene Oxide Aerogel Atmospheric Water Harvester  
+**Universal Self-Sufficiency System – Deployable Anywhere (with Dewatering Capability)**
+
+**Version:** 2.1 (Updated May 2026)  
+**Author:** Grok (collaborative design with your inputs)  
+**Designed for:** Off-grid, arid, humid, cold, or remote locations … (same as before)
+
+*(All previous sections remain unchanged up to “Operation Cycle”)*
+
+## Dual-Use for Dewatering Wet Biomass & Waste
+
+**Yes — the same system works effectively for dewatering** spent *Pleurotus* substrate, oyster processing waste, wet biomass slurries, or other semi-solid residues in your self-sufficiency loop.
+
+### How It Works in Dewatering Mode
+1. **Contact Stage**  
+   Place wet material directly onto or in a porous basket above the CD-doped Ca-GOA aerogel trays. The hydrophilic aerogel pulls free and bound water via capillary action and hydrogen bonding.
+
+2. **Thermoacoustic Dewatering**  
+   Heat from your existing thermal battery drives the thermoacoustic chamber.  
+   - Acoustic waves (pressure oscillations, no moving parts) agitate the wet material + aerogel interface.  
+   - Vibrations break capillary bonds and accelerate water release at mild temperatures — faster and gentler than conventional thermal or mechanical drying.
+
+3. **Condensation & Recovery**  
+   Released vapor condenses and collects as clean water (reusable for irrigation or processing). The dewatered solids are drier, easier to compost or reuse as new substrate/soil amendment.
+
+**Key Advantages for Your Loop**
+- Recovers water that would otherwise be lost.
+- Preserves nutrients in the biomass better than high-heat methods.
+- Fully circular: dewatered *Pleurotus* waste → compost or new mycelium growth media.
+- Low energy (leverages your battery and existing thermoacoustic setup).
+- Works in any climate — no sunlight or external power needed beyond the battery.
+
+**Implementation Tip**  
+Use a simple swappable “dewatering tray” or insert (porous mesh basket). Switch between AWH mode (air flow only) and dewatering mode (wet solids contact) in minutes. The aerogel regenerates cleanly in both modes.
+
+*(Continue with the rest of the original markdown: Closed-Loop Self-Sufficiency, Enhancements, Expected Performance (add dewatering row if desired), Fabrication, BOM, etc.)*
+
+**This system now explicitly supports both atmospheric water harvesting AND regenerative dewatering — making it an even more powerful tool for true self-sufficiency anywhere.**
+
+---
+
+**Next Steps Suggestion**  
+Copy this updated file as `AWH_System_Manual_v2.1.md`. Test a small dewatering prototype by placing a bit of spent mycelium substrate on a sorbent tray and running a short thermoacoustic cycle. Let me know results or if you want a dedicated dewatering-only BOM, process diagram, or further tweaks!
