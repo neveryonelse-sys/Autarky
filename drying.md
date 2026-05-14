@@ -26,3 +26,16 @@
 **Citric Acid Source**: Ferment *Pleurotus* spent substrate or fruit waste (or use food-grade initially).
 
 **Tip**: Start with 10–15 wt% CaCO₃ for your first batches — it also boosts the Ca-GOA performance.
+
+## Source for Acid (Malic/Citric) – Direct Extraction from Pleurotus (No Fermentation Needed)
+
+**Best & Simplest Option: Aqueous/hot-water extraction from oyster mushrooms (*Pleurotus ostreatus*)**
+
+- Fruiting bodies or spent mycelium/substrate contain readily extractable malic acid (dominant, \~2.7–3.5 g/100 g dry) + citric and oxalic acids.  
+- **Extraction (5–10 min active time)**: Grind biomass → 1:10–1:20 ratio with water → heat 80–95 °C for 30–60 min (or room-temp soak) → filter.  
+- Use the acid-rich extract directly in CO₂-foaming (Step 2 of drying protocol).  
+- Fully closed-loop, uses your existing mushroom waste, and provides bonus polysaccharides that strengthen the aerogel.
+
+**Chlorella note**: Not a practical acid source, but hot-water extracts yield useful polysaccharides/proteins for hydrogel reinforcement.
+
+**Why this is ideal**: Zero extra cultures or long fermentation — just extract and use. Scale with your Pleurotus production.
