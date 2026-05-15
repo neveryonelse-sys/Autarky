@@ -94,9 +94,3 @@ The system toggles the Boudouard equilibrium in both directions:
 
 ---
 
-**Concept Origin**  
-Developed through iterative discussion: initial idea of stress-directed CO deposition in graphene@SiC aerogel → full closed-loop system using hydrochar, GO membranes, and molten-Si storage.
-
-*Save this file as `adaptive-bone-mimic.md` and open it in any Markdown viewer or editor (Typora, Obsidian, GitHub, VS Code, etc.). Feel free to edit, expand with diagrams, or add your own sections!*
-
-If you want me to add LaTeX equations, diagrams (via Mermaid or PlantUML), a fabrication protocol, energy-balance calculations, or turn any section into a slide deck, just say the word.
