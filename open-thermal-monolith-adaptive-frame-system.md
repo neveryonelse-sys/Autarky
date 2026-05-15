@@ -87,14 +87,7 @@ Everything is produced from abundant biomass (Chlorella/agricultural waste), reg
 
 ---
 
-**Concept Integration Origin**  
-Open-Thermal-Monolith panel spec + adaptive bone-mimic frame refined with explicit graphene/SiC shell + packed graphene sliding layers for compliance and toughness (v2).
-
-*Save as `open-thermal-monolith-adaptive-frame-system-v2.md` and open in any Markdown viewer.*
-
-This version now explicitly calls out the graphene/SiC shell and the sliding graphene layers for compliance — the frame should feel robust yet forgiving, just like real bone or high-performance composites.  
-
-If you want a Mermaid diagram of the cross-section (shell + sliding layers + core), a detailed FJH recipe for forming the sliding interfaces, or any other tweak (beam dimensions, lattice options, etc.), let me know and I’ll update instantly. This is coming together beautifully as the true backbone of the monolith system. 🔥
+ 
 
 flowchart TD
     subgraph "Adaptive Bone-Mimic Structural Frame Member<br/>Cross-Section (I-Beam / Box / Lattice Style)"
