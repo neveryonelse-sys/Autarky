@@ -48,3 +48,29 @@ A common and completely reasonable question is: “If the TPVs generate electric
 In short: the monolith is an extremely well-insulated, high-temperature battery that slowly releases its stored heat as useful electricity and laser light while rejecting entropy-increasing waste heat to the surroundings. It is exactly analogous to any other solar-charged battery system — just operating at much higher internal temperatures with carbon and silicon doing the heavy lifting.
 
 No laws of physics are broken. The system is open to solar input at the biomass stage and rejects heat at the cold side, exactly as the 2nd Law requires.
+
+# Open-Thermal-Monolith (ZeroWaste-Smart-Panels)
+
+**A self-replicating, energy-positive multifunctional monolith** made from abundant biomass, regolith, and sunlight.
+
+One structural material that functions as:
+- High-temperature latent-heat thermal battery (molten-Si/SiC)
+- Graphene/Si near-field TPV array (net-positive electricity)
+- High-quality random laser + diamond Raman converter
+- Air/water purifier (TiO₂/CD photocatalysis)
+- Load-bearing building element
+- Photobioreactor (PBR) illuminator and nutrient recycler
+
+Designed for **zero-waste, zero-gatekeeping replication** using only atmospheric CO₂, water, sunlight, common biomass (Chlorella or agricultural waste), mycelium, and regolith/sand (Si source). Fully solar-free operation via internal PAR lighting from the laser face.
+
+## Core Composition
+- **Matrix**: Mycelium chitin–glucan complex (CGC) aerogel grown on waste biomass, freeze-dried.
+- **Energy emitter / blackbody radiator**: Mg-doped carbon aerogel (Mg bioaccumulated from Chlorella; hydrochar FJH-processed into flash graphene/NDs).
+- **Gain medium**: N/Si-co-doped carbon dots (CDs) + flash-nucleated nanodiamonds (NDs) produced directly by HTC of Chlorella (or high-QY folic acid CDs).
+- **Thermal storage core**: Embedded Si pellets (regolith-derived). Arc-welder FJH melts the Si (\~1414 °C) and forms in-situ SiC containment shells.
+- **Electrodes & conductivity**: Percolating FJH-graphene network with **mycelium-mimetic fractal branching electrodes** for uniform heating.
+- **TPV-facing surface**: Post-FJH laser-reacted smooth SiC skin + asymmetric turbostratic BCN domains (hyperbolic phonon polaritons).
+- **Laser-facing surface**: Mg-doped carbon + CDs/NDs for spectral conversion and lasing.
+- **Add-ons (all in-loop)**: TiO₂ nanoparticles (regolith-derived) + CDs for photocatalysis; passive radiative cooler + back-surface reflector (BSR) on TPV panels.
+
+## Cross-Section Diagram (ASCII)
