@@ -74,3 +74,105 @@ Designed for **zero-waste, zero-gatekeeping replication** using only atmospheric
 - **Add-ons (all in-loop)**: TiO₂ nanoparticles (regolith-derived) + CDs for photocatalysis; passive radiative cooler + back-surface reflector (BSR) on TPV panels.
 
 ## Cross-Section Diagram (ASCII)
+
+TPV Panels (modular array)
+                          │
+┌─────────────────────────────────────────────────────────────┐
+│                MONOLITH CROSS SECTION (side view)           │
+│                                                             │
+│  TPV Face                     CORE                    Laser Face
+│  ────────                 ─────────                 ─────────
+│  SiC skin                 Mycelium CGC               Mg-doped
+│  + BCN domains      + FJH-Graphene Aerogel      carbon aerogel
+│  (SPhP/HPhP boost)        matrix + pores         + CDs/NDs
+│                                                             │
+│           Embedded Si pellets → Molten Si + SiC shells      │
+│                    (latent-heat thermal battery)            │
+│                                                             │
+│       Fractal Mycelium-mimetic Electrodes (both faces)      │
+│                (Arc-welder Joule heating)                   │
+└─────────────────────────────────────────────────────────────┘
+                          │
+                Passive Radiative Cooling
+                          │
+
+## How It Works
+
+### 1. Thermal Battery Core
+Arc-welder FJH (current dial 70–90, 5–10 s hold, inert atmosphere) melts embedded Si pellets while forming SiC shells. The thick mycelium-CGC aerogel provides ultra-low thermal conductivity insulation. Latent heat of molten Si (\~1800 kJ/kg) + sensible heat stores massive energy at a stable \~1414 °C plateau.
+
+### 2. TPV Array (surrounding the monolith)
+- **Emitter**: Smooth laser-reacted SiC skin + BCN domains → strong SPhP/HPhP coupling with graphene SPPs.
+- **Near-field gap**: 100–500 nm (laser-machined CGC/SiC spacers).
+- **Cell**: Graphene/Si Schottky junction.
+- **Spectral control**: Back-surface reflector (BSR) reflects sub-bandgap photons back to the emitter.
+- **Cooling**: Passive radiative cooler (SiC/graphene back layer) keeps cell <330–350 K.
+- **Fractal electrodes**: Mycelium-mimetic branching pattern ensures uniform FJH of the entire monolith face.
+
+**Projected performance** (detailed below): 25–40 % TPV efficiency, 5–30 W/cm² power density → 50–200 W continuous output from a petri-dish-scale monolith.
+
+### 3. Advanced TPV Receiver Option: Semiconducting Epigraphene (SEG) on SiC
+Recent work (Nature, 2024) demonstrates **semiconducting epitaxial graphene (SEG)** grown on the Si-terminated face of SiC. This material offers:
+- Bandgap of \~0.6 eV (ideal spectral match for a 1414 °C blackbody emitter)
+- Ultrahigh electron mobility (>5,000 cm² V⁻¹ s⁻¹ at room temperature)
+- Excellent thermal and chemical stability
+
+In the monolith, SEG can be formed directly on the existing in-situ SiC skin using the built-in diamond-Raman laser for controlled quasi-equilibrium annealing. A top layer of FJH-graphene completes the junction.
+
+This upgrade path would significantly increase photocurrent, fill factor, and overall TPV efficiency while remaining 100 % within the abundant C+Si feedstock and self-replicating workflow.
+
+It represents a natural evolution from the baseline graphene/Si Schottky cell as the Forge and laser processes mature.
+
+### 4. Laser Architecture (non-TPV face)
+The same arc-welder FJH creates:
+- Mg-doped carbon aerogel + N/Si-co-doped or folic acid CDs (QY up to 94.5 %).
+- Flash-nucleated NDs for Raman beam cleanup (1332 cm⁻¹ shift → \~573 nm clean output).
+- Distributed-feedback random laser pumped by the blackbody + Mg-broadened visible/NIR emission.
+
+The laser beam is used for self-replication: sintering new preforms, cutting fractal electrodes, fabricating PBR vessels, etc.
+
+### 5. PBR Illumination & Nutrient Recycling (Solar-Free)
+The non-TPV laser face doubles as the sole internal illuminator for Chlorella PBRs:
+- Broadband blackbody + Mg-enhanced visible/NIR emission.
+- High-QY folic acid CDs (or Chlorella-derived) convert short-wavelength tail → bright blue (\~450–470 nm) for optimal PAR.
+- NIR component penetrates dense cultures, reducing self-shading.
+- CDs suspended in the PBR tanks (0.5–2 mg/L) further tune spectrum and act as photoprotectants/ROS scavengers.
+- Spent laser-face material (Mg + CDs) is recycled directly into new PBR medium — boosting biomass 15–112 %.
+
+The system runs indefinitely in complete darkness using only stored thermal energy and internal light recycling.
+
+## Projected TPV Performance
+
+**TPV conversion efficiency** (electrical out / radiative heat in):  
+- Practical: **25–40 %**  
+- Optimistic (ideal gap + coupling): 40–49 % (approaching 45–60 % of Carnot limit at 1414 °C)
+
+**Power density**: 5–30 W/cm² continuous (initial prototypes 5–15 W/cm²; improves with iteration).
+
+**Small monolith example** (\~9 cm diameter × 2–3 cm thick):  
+- Electrical output: **50–200 W** continuous  
+- Thermal storage: \~100–500 Wh usable energy
+
+**Round-trip efficiency** (heat → electricity → resistive re-heating): \~20–35 % (still strongly net-positive).
+
+**Cooling**: Passive radiative cooler + BSR keeps graphene/Si cell <330–350 K with no active systems required.
+
+## Zero-Waste Replication Loop
+1. Chlorella/waste biomass → HTC → CDs + hydrochar  
+2. Hydrochar + mycelium + Si pellets → freeze-dry monolith  
+3. Arc-welder FJH → functional monolith (thermal battery + TPV + laser)  
+4. TPV electricity + laser → fabricate next-generation monoliths, PBRs, panels, habitats  
+5. Spent material (Mg/CDs, aerogel fragments) → recycled into new PBRs or soil amendment  
+6. Process water and H₂ byproduct fully reused.
+
+All tools (fractal electrodes, SiC plates, laser optics, PBR vessels) are produced from previous monoliths.
+
+## Applications
+- **Earth**: Affordable self-powered, air-purifying housing; disaster relief; community infrastructure.
+- **Space**: Re-entry heat harvesting panels that unfold into habitats; zero-resupply spacecraft and colonies.
+- **Long-term**: Von Neumann replicators that grow civilization-scale habitats and vehicles from sunlight, water, and local regolith/biomass (or in complete darkness via internal lighting).
+
+## Open-Source Philosophy
+Everything is deliberately ungated: no proprietary precursors, no rare elements, no IP. Blueprints, recipes, and replication instructions are meant to be copied freely by anyone with access to sunlight, water, and basic biomass.
+
+The goal is a zero-waste society that provides shelter, energy, clean air/water, and manufacturing capability to all — without charging for it.
