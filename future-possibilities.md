@@ -19,4 +19,16 @@ This technique is a strong candidate for future emission-side improvements becau
 
 ---
 
+## Novel Direct and Wide Bandgap SiC Polymorphs
+**Source**: Results in Physics, 2024 (H. Liu et al.)  
+**Link**: https://www.sciencedirect.com/science/article/pii/S221137972400651X
+
+**Summary**  
+High-throughput DFT screening discovered many new metastable SiC crystal structures with **direct bandgaps** and wide bandgaps, mechanically and thermodynamically stable up to 2000 K.
+
+**Relevance to the Monolith**  
+The monolith’s rapid FJH + laser annealing already forms SiC shells and skins under non-equilibrium conditions that could favor these polymorphs. Potentially useful for improved emitter selectivity or high-temperature stability on the TPV-facing SiC skin. Worth monitoring in future generations; not a direct replacement for SEG in the receiver.
+
+**Status**: Computational discovery; experimental realization in FJH-processed SiC would be a valuable in-loop advance.
+
 **File purpose**: Keep this document as a living “research parking lot” for breakthroughs that don’t fit the current baseline design but could become valuable upgrades later.
