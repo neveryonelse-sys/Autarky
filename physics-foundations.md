@@ -116,6 +116,3 @@ Spin effects, while physically real, are secondary compared with the above in th
 
 ---
 
-This document is intentionally focused. It covers the mechanisms you are most likely to be asked about when discussing the TPV receiver and emitter with people who work in this area.
-
-Would you like me to expand any section, add more precise language for specific topics, or create a shorter “cheat sheet” version of the key talking points?
