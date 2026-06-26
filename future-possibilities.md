@@ -32,3 +32,12 @@ The monolith’s rapid FJH + laser annealing already forms SiC shells and skins 
 **Status**: Computational discovery; experimental realization in FJH-processed SiC would be a valuable in-loop advance.
 
 **File purpose**: Keep this document as a living “research parking lot” for breakthroughs that don’t fit the current baseline design but could become valuable upgrades later.
+
+Tunable Extinction and Near-Perfect Absorption in Graphene/hBN Heterostructures
+Source: Journal of Applied Physics (2026)
+Link: AIP
+Summary
+This work demonstrates that graphene/hBN heterostructures can achieve strong, tunable light absorption through hybridization between graphene surface plasmon polaritons and hBN hyperbolic phonon polaritons. By controlling graphene doping (via gating or chemical doping) and layer thickness, the system can be tuned to achieve near-perfect absorption at specific mid-infrared frequencies through critical coupling.
+Relevance to the Monolith
+This paper supports the core polariton hybridization strategy already used in the design (graphene SPPs coupling with BCN/SPhPs). It shows that graphene + hBN/BCN stacks can be further engineered for stronger and more tunable absorption/extinction. This is relevant for potential future improvements to both the emitter side (more selective emission) and receiver side (better absorption of the incoming polaritonic energy). The work reinforces that resonance tuning between graphene plasmons and BCN phonon polaritons is a high-leverage direction.
+Status: Theoretical/simulation-focused with experimental implications. Useful as a reference for advanced resonance tuning and selective absorption in later-generation modules.
